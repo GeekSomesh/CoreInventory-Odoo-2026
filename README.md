@@ -1,0 +1,1 @@
+# CoreInventory-Odoo-2026
