@@ -570,6 +570,105 @@ select.form-input option { background: var(--clr-bg-2); }
 }
 .section-card-header h3 { font-size: 1rem; color: var(--txt-primary); }
 
+/* Topbar Dropdowns */
+.topbar-dropdown-panel {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(12,18,33,0.98) 0%, rgba(8,12,24,0.98) 100%);
+  box-shadow: 0 24px 56px rgba(0,0,0,0.5);
+  z-index: calc(var(--z-modal) + 2);
+  overflow: hidden;
+}
+.topbar-dropdown-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(148,163,184,0.14);
+  background: rgba(255,255,255,0.03);
+}
+.topbar-dropdown-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--txt-primary);
+}
+.topbar-dropdown-subtitle {
+  margin-top: 4px;
+  font-size: 0.72rem;
+  color: var(--txt-muted);
+}
+.topbar-dropdown-body {
+  max-height: min(68vh, 540px);
+  overflow-y: auto;
+  display: grid;
+  gap: 0;
+}
+.topbar-alert-section {
+  border-top: 1px solid rgba(148,163,184,0.1);
+}
+.topbar-alert-section:first-child {
+  border-top: none;
+}
+.topbar-alert-section-title {
+  padding: 10px 14px 8px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--txt-muted);
+}
+.topbar-alert-row {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 14px;
+  border: none;
+  border-top: 1px solid rgba(148,163,184,0.08);
+  background: transparent;
+  color: var(--txt-primary);
+  cursor: pointer;
+}
+.topbar-alert-row:hover {
+  background: rgba(255,255,255,0.04);
+}
+.topbar-alert-main {
+  min-width: 0;
+  display: grid;
+  gap: 2px;
+}
+.topbar-alert-title {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--txt-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.topbar-alert-meta {
+  font-size: 0.72rem;
+  color: var(--txt-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.topbar-alert-date {
+  margin-top: 4px;
+  font-size: 0.67rem;
+  color: var(--txt-muted);
+}
+.topbar-alert-empty {
+  padding: 8px 14px 12px;
+  font-size: 0.76rem;
+  color: var(--txt-muted);
+}
+
 /* Alert Colors for Operation Types */
 .op-receipt { color: var(--clr-success); }
 .op-delivery { color: var(--clr-violet); }
@@ -604,4 +703,5 @@ select.form-input option { background: var(--clr-bg-2); }
   .page-header { align-items: flex-start; }
   .insight-modal-overlay { padding: 14px; }
   .insight-modal { max-height: 90vh; }
+  .topbar-dropdown-panel { width: min(92vw, 430px) !important; right: -6px; }
 }
