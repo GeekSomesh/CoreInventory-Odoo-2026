@@ -1,11 +1,11 @@
 import { useEffect, useMemo, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Plus, Search, Tag, X } from 'lucide-react';
+import { FileClock, Plus, Search, Tag, X } from 'lucide-react';
 import toast from 'react-hot-toast';
 import client from '../../api/client';
 import PageHeader from '../../components/ui/PageHeader';
-import type { Category, Location, Product, Warehouse } from '../../types/api';
-import { formatQty } from '../../utils/format';
+import type { Category, Location, MoveHistoryItem, PaginatedResponse, Product, Warehouse } from '../../types/api';
+import { formatDateTime, formatQty, operationTypeLabel } from '../../utils/format';
 import { getErrorMessage } from '../../utils/errors';
 
 interface ProductFormState {
@@ -44,6 +44,10 @@ export default function ProductsPage() {
   const [form, setForm] = useState<ProductFormState>(emptyForm);
   const [showCategoryForm, setShowCategoryForm] = useState(false);
   const [newCategory, setNewCategory] = useState('');
+  const [logProduct, setLogProduct] = useState<Product | null>(null);
+  const [logRows, setLogRows] = useState<MoveHistoryItem[]>([]);
+  const [logLoading, setLogLoading] = useState(false);
+  const [logTotal, setLogTotal] = useState(0);
 
   async function loadData() {
     setLoading(true);
@@ -166,6 +170,30 @@ export default function ProductsPage() {
     }
   }
 
+  async function openLogModal(product: Product) {
+    setLogProduct(product);
+    setLogRows([]);
+    setLogTotal(0);
+    setLogLoading(true);
+    try {
+      const response = await client.get<PaginatedResponse<MoveHistoryItem>>('/history', {
+        params: { product_id: product.id, page: 1, limit: 200 },
+      });
+      setLogRows(response.data.data);
+      setLogTotal(response.data.total);
+    } catch (error) {
+      toast.error(getErrorMessage(error, 'Failed to load product logs'));
+    } finally {
+      setLogLoading(false);
+    }
+  }
+
+  function closeLogModal() {
+    setLogProduct(null);
+    setLogRows([]);
+    setLogTotal(0);
+  }
+
   return (
     <div className="page-container">
       <PageHeader
@@ -256,13 +284,14 @@ export default function ProductsPage() {
                 <th>Total Stock</th>
                 <th>Reorder</th>
                 <th>Status</th>
-                <th />
+                <th>Log</th>
+                <th>Actions</th>
               </tr>
             </thead>
             <tbody>
               {loading ? (
                 <tr>
-                  <td colSpan={8} style={{ textAlign: 'center', color: 'var(--txt-muted)' }}>
+                  <td colSpan={9} style={{ textAlign: 'center', color: 'var(--txt-muted)' }}>
                     Loading products...
                   </td>
                 </tr>
@@ -275,9 +304,6 @@ export default function ProductsPage() {
                       <td>{product.sku}</td>
                       <td>
                         <div>{product.name}</div>
-                        <div style={{ color: 'var(--txt-muted)', fontSize: '0.75rem' }}>
-                          {product.stock_by_location?.slice(0, 2).map((item) => `${item.location}: ${formatQty(item.qty)}`).join(' | ') || '-'}
-                        </div>
                       </td>
                       <td>{product.category_name ?? '-'}</td>
                       <td>{product.uom}</td>
@@ -289,6 +315,12 @@ export default function ProductsPage() {
                         <span className={`badge ${isLow ? 'badge-low' : 'badge-done'}`}>
                           {isLow ? 'LOW STOCK' : 'HEALTHY'}
                         </span>
+                      </td>
+                      <td>
+                        <button className="btn btn-secondary btn-sm" type="button" onClick={() => openLogModal(product)}>
+                          <FileClock size={14} />
+                          Log
+                        </button>
                       </td>
                       <td>
                         <div style={{ display: 'flex', gap: 8, justifyContent: 'flex-end' }}>
@@ -305,7 +337,7 @@ export default function ProductsPage() {
                 })
               ) : (
                 <tr>
-                  <td colSpan={8} style={{ textAlign: 'center', color: 'var(--txt-muted)' }}>
+                  <td colSpan={9} style={{ textAlign: 'center', color: 'var(--txt-muted)' }}>
                     No products found for current filters.
                   </td>
                 </tr>
@@ -453,7 +485,135 @@ export default function ProductsPage() {
           </>
         ) : null}
       </AnimatePresence>
+
+      <AnimatePresence>
+        {logProduct ? (
+          <>
+            <motion.div
+              className="drawer-overlay"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={closeLogModal}
+            />
+            <motion.section
+              initial={{ opacity: 0, scale: 0.98, y: 12 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.98, y: 12 }}
+              transition={{ duration: 0.2 }}
+              style={{
+                position: 'fixed',
+                inset: '6% 6%',
+                zIndex: 170,
+                background: 'var(--clr-bg-2)',
+                border: '1px solid var(--glass-border)',
+                borderRadius: 16,
+                display: 'flex',
+                flexDirection: 'column',
+                overflow: 'hidden',
+                boxShadow: 'var(--shadow-md)',
+              }}
+            >
+              <header
+                style={{
+                  padding: '14px 18px',
+                  borderBottom: '1px solid var(--glass-border)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  gap: 10,
+                }}
+              >
+                <div>
+                  <h3 style={{ fontSize: '1rem' }}>
+                    Product Log - {logProduct.name} ({logProduct.sku})
+                  </h3>
+                  <p style={{ color: 'var(--txt-muted)', fontSize: '0.8rem' }}>
+                    Total entries: {formatQty(logTotal)}
+                  </p>
+                </div>
+                <button className="btn btn-ghost btn-icon" type="button" onClick={closeLogModal}>
+                  <X size={16} />
+                </button>
+              </header>
+
+              <div style={{ padding: 14, overflowY: 'auto', display: 'grid', gap: 14 }}>
+                <section className="glass-card-strong" style={{ padding: 12 }}>
+                  <h4 style={{ fontSize: '0.9rem', marginBottom: 8 }}>Warehouse Quantities</h4>
+                  <table className="data-table">
+                    <thead>
+                      <tr>
+                        <th>Location</th>
+                        <th>Quantity</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {(logProduct.stock_by_location?.length ?? 0) ? (
+                        logProduct.stock_by_location?.map((row, index) => (
+                          <tr key={`${row.location}-${index}`}>
+                            <td>{row.location}</td>
+                            <td>{formatQty(row.qty)}</td>
+                          </tr>
+                        ))
+                      ) : (
+                        <tr>
+                          <td colSpan={2} style={{ textAlign: 'center', color: 'var(--txt-muted)' }}>
+                            No location stock data available.
+                          </td>
+                        </tr>
+                      )}
+                    </tbody>
+                  </table>
+                </section>
+
+                <section className="glass-card-strong" style={{ padding: 12 }}>
+                  <h4 style={{ fontSize: '0.9rem', marginBottom: 8 }}>Movement Log</h4>
+                  <table className="data-table">
+                    <thead>
+                      <tr>
+                        <th>Date</th>
+                        <th>Type</th>
+                        <th>Reference</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Qty</th>
+                        <th>User</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {logLoading ? (
+                        <tr>
+                          <td colSpan={7} style={{ textAlign: 'center', color: 'var(--txt-muted)' }}>
+                            Loading logs...
+                          </td>
+                        </tr>
+                      ) : logRows.length ? (
+                        logRows.map((row) => (
+                          <tr key={row.id}>
+                            <td>{formatDateTime(row.created_at)}</td>
+                            <td><span className={`op-${row.operation_type}`}>{operationTypeLabel(row.operation_type)}</span></td>
+                            <td>{row.ref}</td>
+                            <td>{row.from_location_name ?? row.from_location_id}</td>
+                            <td>{row.to_location_name ?? row.to_location_id}</td>
+                            <td>{formatQty(row.qty)}</td>
+                            <td>{row.user_name ?? row.user_id}</td>
+                          </tr>
+                        ))
+                      ) : (
+                        <tr>
+                          <td colSpan={7} style={{ textAlign: 'center', color: 'var(--txt-muted)' }}>
+                            No movement logs found for this item.
+                          </td>
+                        </tr>
+                      )}
+                    </tbody>
+                  </table>
+                </section>
+              </div>
+            </motion.section>
+          </>
+        ) : null}
+      </AnimatePresence>
     </div>
   );
 }
-

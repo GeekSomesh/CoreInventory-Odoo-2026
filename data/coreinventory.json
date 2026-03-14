@@ -818,6 +818,17 @@
   ],
   "deliveries": [
     {
+      "id": "d694ad4f-de4d-429f-9884-32ecd3762237",
+      "ref": "DEL-00008",
+      "customer": "dvsdsd",
+      "warehouse_id": "ba7a33d2-5913-45fb-9ab3-45b49e6908aa",
+      "scheduled_date": "0545-04-03",
+      "notes": "",
+      "status": "done",
+      "created_by": "185d5ebf-6a20-4cf0-99f6-270f022ca8cc",
+      "created_at": "2026-03-14T05:49:22.285Z"
+    },
+    {
       "id": "47472d06-95c2-4822-9e7b-1262e7155eff",
       "ref": "DEL-00007",
       "customer": "Hari",
@@ -963,9 +974,28 @@
       "demand_qty": 20,
       "done_qty": 0,
       "location_id": "da1e50d4-8805-490f-8872-ac77ee7f861c"
+    },
+    {
+      "id": "0e9a2f2f-4df4-4624-9d6f-2b458c9eb708",
+      "delivery_id": "d694ad4f-de4d-429f-9884-32ecd3762237",
+      "product_id": "b64b9027-eb5b-46b3-bfc4-099c93dabfe1",
+      "demand_qty": 1,
+      "done_qty": 0,
+      "location_id": null
     }
   ],
   "transfers": [
+    {
+      "id": "b4800db3-be1d-46aa-aa19-975c6c737ec0",
+      "ref": "INT-00009",
+      "from_location_id": "2a9480c0-55d9-4540-abbc-b83c09f1efb4",
+      "to_location_id": "52a998ab-ee17-4d26-b91d-072dbbe0a3f7",
+      "scheduled_date": "2222-01-03",
+      "notes": "",
+      "status": "waiting",
+      "created_by": "185d5ebf-6a20-4cf0-99f6-270f022ca8cc",
+      "created_at": "2026-03-14T05:50:02.413Z"
+    },
     {
       "id": "176af7f7-67aa-411f-8c0d-97e7ff0ebf82",
       "ref": "INT-00008",
@@ -1116,6 +1146,12 @@
       "transfer_id": "176af7f7-67aa-411f-8c0d-97e7ff0ebf82",
       "product_id": "635c93d1-2951-491e-a1c6-4467275b6d59",
       "qty": 25
+    },
+    {
+      "id": "eeff5c07-35ea-4d0f-a1cf-3e3dc7626bf9",
+      "transfer_id": "b4800db3-be1d-46aa-aa19-975c6c737ec0",
+      "product_id": "b64b9027-eb5b-46b3-bfc4-099c93dabfe1",
+      "qty": 10
     }
   ],
   "adjustments": [
@@ -1168,7 +1204,7 @@
       "ref": "ADJ-00002",
       "location_id": "da1e50d4-8805-490f-8872-ac77ee7f861c",
       "notes": "Damage",
-      "status": "draft",
+      "status": "ready",
       "created_by": "185d5ebf-6a20-4cf0-99f6-270f022ca8cc",
       "created_at": "2026-03-14T05:15:23.322Z"
     },
@@ -1191,13 +1227,6 @@
       "product_id": "920d3895-825a-433a-984f-922e4562ff1e",
       "system_qty": 80,
       "counted_qty": 5
-    },
-    {
-      "id": "ca0ba2e6-2a80-4120-899e-09e8033369af",
-      "adjustment_id": "e3a45e2a-2d95-4f88-a2b6-8bbd69617de0",
-      "product_id": "920d3895-825a-433a-984f-922e4562ff1e",
-      "system_qty": 5,
-      "counted_qty": 2
     },
     {
       "id": "9b78a8ea-e6ca-46d6-ae14-6bc0ce23cf16",
@@ -1230,9 +1259,28 @@
       "system_qty": 40,
       "counted_qty": 35,
       "change_qty": -5
+    },
+    {
+      "id": "fc2d007f-1948-4004-9a9a-75a42e0c3add",
+      "adjustment_id": "e3a45e2a-2d95-4f88-a2b6-8bbd69617de0",
+      "product_id": "920d3895-825a-433a-984f-922e4562ff1e",
+      "system_qty": 105,
+      "counted_qty": 102,
+      "change_qty": -3
     }
   ],
   "moveHistory": [
+    {
+      "id": "775c76ca-7ec6-481c-953d-bd7375a6b001",
+      "operation_type": "adjustment",
+      "ref": "ADJ-00006",
+      "product_id": "635c93d1-2951-491e-a1c6-4467275b6d59",
+      "from_location_id": "da1e50d4-8805-490f-8872-ac77ee7f861c",
+      "to_location_id": "ADJUSTMENT",
+      "qty": 5,
+      "user_id": "185d5ebf-6a20-4cf0-99f6-270f022ca8cc",
+      "created_at": "2026-03-14T05:38:17.703Z"
+    },
     {
       "id": "dc72e7a8-05dd-4bac-906c-1bc50ef9c74b",
       "operation_type": "adjustment",
@@ -2068,17 +2116,6 @@
       "qty": 65,
       "user_id": "185d5ebf-6a20-4cf0-99f6-270f022ca8cc",
       "created_at": "2026-02-13T03:48:35.234Z"
-    },
-    {
-      "id": "775c76ca-7ec6-481c-953d-bd7375a6b001",
-      "operation_type": "adjustment",
-      "ref": "ADJ-00006",
-      "product_id": "635c93d1-2951-491e-a1c6-4467275b6d59",
-      "from_location_id": "da1e50d4-8805-490f-8872-ac77ee7f861c",
-      "to_location_id": "ADJUSTMENT",
-      "qty": 5,
-      "user_id": "185d5ebf-6a20-4cf0-99f6-270f022ca8cc",
-      "created_at": "2026-03-14T05:38:17.703Z"
     }
   ]
 }
