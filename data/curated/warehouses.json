@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Main Warehouse",
+    "short_code": "WH1",
+    "address": "123 Industrial Zone, Sector 7",
+    "locations": [
+      { "name": "Main Store", "full_path": "WH1/Main_Store", "type": "internal" },
+      { "name": "Receiving Area", "full_path": "WH1/Receiving", "type": "internal" },
+      { "name": "Rack A", "full_path": "WH1/Rack_A", "type": "internal" },
+      { "name": "Rack B", "full_path": "WH1/Rack_B", "type": "internal" },
+      { "name": "Shipping Bay", "full_path": "WH1/Shipping", "type": "internal" }
+    ]
+  },
+  {
+    "name": "North Depot",
+    "short_code": "WH2",
+    "address": "456 North Road, Warehouse District",
+    "locations": [
+      { "name": "Storage Floor", "full_path": "WH2/Storage", "type": "internal" },
+      { "name": "Cold Storage", "full_path": "WH2/Cold_Storage", "type": "internal" }
+    ]
+  },
+  {
+    "name": "Production Facility",
+    "short_code": "WH3",
+    "address": "789 Factory Lane, Industrial Park",
+    "locations": [
+      { "name": "Production Floor", "full_path": "WH3/Production", "type": "internal" },
+      { "name": "Quality Control", "full_path": "WH3/QC_Area", "type": "internal" }
+    ]
+  }
+]

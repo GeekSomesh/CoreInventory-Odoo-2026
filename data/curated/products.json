@@ -1,0 +1,3842 @@
+[
+  {
+    "name": "360 Electrical 360461-FG Habitat Braided Extension Cord, Sea Glass 6ft, Includes 2....",
+    "sku": "EL-0012",
+    "category": "Electronics",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 33
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 18
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 22
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B07Z9HW4R9",
+    "brand": "360 Electrical",
+    "unit_cost": 24.99,
+    "rating_number": 294,
+    "average_rating": 4.7
+  },
+  {
+    "name": "360 Lighting Colby Modern Desk Table Lamp with Hotel Style USB and AC Power Outlet...",
+    "sku": "EL-0007",
+    "category": "Electronics",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 36
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 20
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 25
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B09MWMT3MJ",
+    "brand": "360 Lighting",
+    "unit_cost": 129.99,
+    "rating_number": 450,
+    "average_rating": 4.8
+  },
+  {
+    "name": "BBOUNDER 12 Pack 5/6 Inch LED Recessed Downlight, Baffle Trim, Dimmable, 12.5W=100W...",
+    "sku": "EL-0001",
+    "category": "Electronics",
+    "uom": "sets",
+    "reorder_min": 5,
+    "reorder_max": 21,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 9
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 5
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 6
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B08TH9VGWF",
+    "brand": "BBOUNDER",
+    "unit_cost": 69.99,
+    "rating_number": 4754,
+    "average_rating": 4.5
+  },
+  {
+    "name": "CNSUNWAY LIGHTING 8FT LED Bulbs, 45W 5400LM 6000K Super Bright, FA8 Single Pin LED...",
+    "sku": "EL-0003",
+    "category": "Electronics",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 32
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 18
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 20
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B0BQ76GBD1",
+    "brand": "CNSUNWAY LIGHTING",
+    "unit_cost": 264.99,
+    "rating_number": 998,
+    "average_rating": 4.3
+  },
+  {
+    "name": "E-Projects - Radial Electrolytic Capacitor, 100uF, 16V, 105 C (Pack of 5)",
+    "sku": "EL-0025",
+    "category": "Electronics",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 32
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 18
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 20
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B07Y8NP17D",
+    "brand": "E-Projects",
+    "unit_cost": 5.38,
+    "rating_number": 93,
+    "average_rating": 4.7
+  },
+  {
+    "name": "E-outstanding 2Pcs Plastic Housing On/Off Thumbwheel Light Lamp Inline Switch Clear...",
+    "sku": "EL-0022",
+    "category": "Electronics",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 39
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 22
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 25
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B07R5SMSDV",
+    "brand": "E-outstanding",
+    "unit_cost": 6.99,
+    "rating_number": 148,
+    "average_rating": 4.3
+  },
+  {
+    "name": "Fieldpiece RMA316 Manometer Tube Adapter, 3/16\" to 5/16",
+    "sku": "EL-0020",
+    "category": "Electronics",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 36
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 20
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 25
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B00NBR1RZQ",
+    "brand": "Fieldpiece",
+    "unit_cost": 14.99,
+    "rating_number": 140,
+    "average_rating": 4.7
+  },
+  {
+    "name": "First Alert SA511CN2-3ST Wireless Interconnected Smoke Alarm with Voice Location, B...",
+    "sku": "EL-0002",
+    "category": "Electronics",
+    "uom": "m",
+    "reorder_min": 60,
+    "reorder_max": 252,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 79
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 44
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 52
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B09RNVY2BY",
+    "brand": "FIRST ALERT",
+    "unit_cost": 67.25,
+    "rating_number": 2451,
+    "average_rating": 4.5
+  },
+  {
+    "name": "Fruholt 4-in-1 Impact Drill Bit Extension, 360\u00b0 Rotatable 1/4 3/8 1/2\" Impact Grade...",
+    "sku": "EL-0013",
+    "category": "Electronics",
+    "uom": "pairs",
+    "reorder_min": 12,
+    "reorder_max": 50,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 15
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 8
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 10
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B0BNYF8GH9",
+    "brand": "Fruholt",
+    "unit_cost": 8.0,
+    "rating_number": 363,
+    "average_rating": 4.3
+  },
+  {
+    "name": "GLADFRESIT Modern Wall Light Set of 2 Beige Fabric Shade Wall Sconce with Plug-in C...",
+    "sku": "EL-0023",
+    "category": "Electronics",
+    "uom": "sets",
+    "reorder_min": 5,
+    "reorder_max": 21,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 12
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 6
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 8
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B0B5V3QXG9",
+    "brand": "GLADFRESIT",
+    "unit_cost": 49.99,
+    "rating_number": 106,
+    "average_rating": 4.4
+  },
+  {
+    "name": "GREDIA 2\" Water Flow Sensor Food-Grade Switch Hall Effect Flowmeter Fluid Meter Cou...",
+    "sku": "EL-0028",
+    "category": "Electronics",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 36
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 20
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 24
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B08L6MMBVD",
+    "brand": "GREDIA",
+    "unit_cost": 23.09,
+    "rating_number": 97,
+    "average_rating": 4.2
+  },
+  {
+    "name": "GREENIC 2 Pack Multicolor Night Lights, 7 Color Cycle, Plug in, Auto on Off, 0.5w L...",
+    "sku": "EL-0004",
+    "category": "Electronics",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 37
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 21
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 25
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B07CTFHMBR",
+    "brand": "GREENIC",
+    "unit_cost": 9.99,
+    "rating_number": 1449,
+    "average_rating": 4.5
+  },
+  {
+    "name": "Goplus Cordless Rotary Tool Kit with 40 Accessories, Li-ion 3-Speed and USB Chargin...",
+    "sku": "EL-0011",
+    "category": "Electronics",
+    "uom": "sets",
+    "reorder_min": 5,
+    "reorder_max": 21,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 9
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 5
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 5
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B086PQG3X2",
+    "brand": "Goplus",
+    "unit_cost": 15.99,
+    "rating_number": 379,
+    "average_rating": 4.3
+  },
+  {
+    "name": "HSJL 40PCS Low Voltage Wire Connectors - Landscape Lighting Wire Connector, Outdoor...",
+    "sku": "EL-0015",
+    "category": "Electronics",
+    "uom": "m",
+    "reorder_min": 60,
+    "reorder_max": 252,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 105
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 58
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 71
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B08YXNWDWR",
+    "brand": "HSJL",
+    "unit_cost": 20.99,
+    "rating_number": 276,
+    "average_rating": 4.5
+  },
+  {
+    "name": "HiLetgo 20pcs WH148 Single-Joint Potentiometer 1K B1K Variable Resistors 15mm Shaft...",
+    "sku": "EL-0008",
+    "category": "Electronics",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 40
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 22
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 27
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B07VJ4DNLW",
+    "brand": "HiLetgo",
+    "unit_cost": 9.29,
+    "rating_number": 422,
+    "average_rating": 4.6
+  },
+  {
+    "name": "JOYLIT RGBW LED Light Bulb Par30, RGB Daylight White Color Changing Spotlight E27...",
+    "sku": "EL-0030",
+    "category": "Electronics",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 23
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 13
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 15
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B01CD3D7FG",
+    "brand": "JOYLIT",
+    "unit_cost": 22.99,
+    "rating_number": 79,
+    "average_rating": 4.4
+  },
+  {
+    "name": "LIVOLO Blank Wall Plate,Standard Size 1-gang,No Switch Function Only For Decoration...",
+    "sku": "EL-0019",
+    "category": "Electronics",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 37
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 20
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 25
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B08G89G8C1",
+    "brand": "LIVOLO",
+    "unit_cost": 8.8,
+    "rating_number": 195,
+    "average_rating": 4.5
+  },
+  {
+    "name": "LUXRITE 5/6 Inch LED Recessed Retrofit Downlight, 14W=90W, CCT Color Selectable 270...",
+    "sku": "EL-0006",
+    "category": "Electronics",
+    "uom": "sets",
+    "reorder_min": 5,
+    "reorder_max": 21,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 10
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 6
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 7
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B09LDJLNVW",
+    "brand": "LUXRITE",
+    "unit_cost": 251.95,
+    "rating_number": 437,
+    "average_rating": 4.5
+  },
+  {
+    "name": "Led Grow Light Bulb, 28W Full Spectrum Grow Lights E26 Grow Plant Light for Hydropo...",
+    "sku": "EL-0016",
+    "category": "Electronics",
+    "uom": "pairs",
+    "reorder_min": 12,
+    "reorder_max": 50,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 27
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 15
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 19
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B071RCTKNF",
+    "brand": "Haodude",
+    "unit_cost": 10.49,
+    "rating_number": 314,
+    "average_rating": 4.1
+  },
+  {
+    "name": "Leviton 1689-50 Pull Chain Switch-SX-0154062, Image",
+    "sku": "EL-0026",
+    "category": "Electronics",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 25
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 14
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 16
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B00002NARN",
+    "brand": "Leviton",
+    "unit_cost": 15.48,
+    "rating_number": 118,
+    "average_rating": 4.1
+  },
+  {
+    "name": "Makita XLC03ZBX4 18V LXT Lithium-Ion Brushless Compact Cordless Vacuum, Trigger w/L...",
+    "sku": "EL-0010",
+    "category": "Electronics",
+    "uom": "sets",
+    "reorder_min": 5,
+    "reorder_max": 21,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 9
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 5
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 7
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B0BPG62X5T",
+    "brand": "Makita",
+    "unit_cost": 308.0,
+    "rating_number": 191,
+    "average_rating": 4.5
+  },
+  {
+    "name": "Outdoor String Lights, Patio Lights Outdoor Waterproof, 48FT Led String Lights Outd...",
+    "sku": "EL-0021",
+    "category": "Electronics",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 47
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 26
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 32
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B0B15M7WRD",
+    "brand": "GALLIA",
+    "unit_cost": 29.99,
+    "rating_number": 146,
+    "average_rating": 4.3
+  },
+  {
+    "name": "REED Instruments TP-01 Beaded Thermocouple Wire Probe, Type K, -40 to 482\u00b0F (-40 to...",
+    "sku": "EL-0027",
+    "category": "Electronics",
+    "uom": "m",
+    "reorder_min": 60,
+    "reorder_max": 252,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 20
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 11
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 14
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B00WR3TXOW",
+    "brand": "Reed",
+    "unit_cost": 14.68,
+    "rating_number": 93,
+    "average_rating": 4.5
+  },
+  {
+    "name": "Sunco 10 Pack G25 LED Clear Globe Light Bulbs LED 40W=3.5W, Dusk to Dawn Edison Fil...",
+    "sku": "EL-0018",
+    "category": "Electronics",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 7
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 4
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 4
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B0BC9V8LXV",
+    "brand": "Sunco Lighting",
+    "unit_cost": 14.99,
+    "rating_number": 220,
+    "average_rating": 4.3
+  },
+  {
+    "name": "Sunlite 49095-SU LED 32-Inch Oval Flush Mount Ceiling Light Fixture, 3000K - Warm W...",
+    "sku": "EL-0009",
+    "category": "Electronics",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 7
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 4
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 4
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B08836Y9FT",
+    "brand": "Sunlite",
+    "unit_cost": 218.88,
+    "rating_number": 233,
+    "average_rating": 4.4
+  },
+  {
+    "name": "Tacwise 0773 2-1/2 Inch Angled Nails for Dewalt DC618KB/Paslode IM250A/IM65A F16 Na...",
+    "sku": "EL-0005",
+    "category": "Electronics",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 24
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 14
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 16
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B01N9UOTK8",
+    "brand": "Tacwise",
+    "unit_cost": 32.36,
+    "rating_number": 896,
+    "average_rating": 4.7
+  },
+  {
+    "name": "Telescopic Inspection Mirror with Light Large telescoping led 360 Inspection Rotati...",
+    "sku": "EL-0014",
+    "category": "Electronics",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 38
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 21
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 26
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B07PPG4BJF",
+    "brand": "Ailenyun",
+    "unit_cost": 9.89,
+    "rating_number": 310,
+    "average_rating": 4.4
+  },
+  {
+    "name": "Twidec/20Pcs 4.8mm and 6.3mm Female Spade Crimp Terminal with Insulating Sleeve and...",
+    "sku": "EL-0017",
+    "category": "Electronics",
+    "uom": "m",
+    "reorder_min": 60,
+    "reorder_max": 252,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 117
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 65
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 78
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B08FDH51PL",
+    "brand": "Twidec",
+    "unit_cost": 9.99,
+    "rating_number": 241,
+    "average_rating": 4.5
+  },
+  {
+    "name": "Wireless Caregiver Pager Smart Call System 1 SOS Call Button, PENCK Waterproof Door...",
+    "sku": "EL-0029",
+    "category": "Electronics",
+    "uom": "m",
+    "reorder_min": 60,
+    "reorder_max": 252,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 78
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 44
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 52
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B078RWZSYB",
+    "brand": "PENCK",
+    "unit_cost": 21.99,
+    "rating_number": 81,
+    "average_rating": 4.4
+  },
+  {
+    "name": "uxcell Terminal Block Connector Bar 10 Positions Single Row High Bridge Design Elec...",
+    "sku": "EL-0024",
+    "category": "Electronics",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_A",
+        "qty": 43
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 24
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 29
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B0C69NJP9V",
+    "brand": "uxcell",
+    "unit_cost": 11.49,
+    "rating_number": 105,
+    "average_rating": 4.6
+  },
+  {
+    "name": "11 Pound Rough Stone Mix | GEM Mining KIT | Gemstone Paydirt | Sieve | Gem ID Chart...",
+    "sku": "FG-0010",
+    "category": "Finished Goods",
+    "uom": "sets",
+    "reorder_min": 5,
+    "reorder_max": 21,
+    "stock_by_location": [
+      {
+        "location": "WH3/Production",
+        "qty": 10
+      },
+      {
+        "location": "WH1/Shipping",
+        "qty": 7
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B075DH1FN6",
+    "brand": "Sluiceboy Prospecting",
+    "unit_cost": 64.99,
+    "rating_number": 140,
+    "average_rating": 4.7
+  },
+  {
+    "name": "Carburetors Carbon Dirt Jet Remove Cleaner, 13 Cleaning Wires Set + 10 Cleaning Nee...",
+    "sku": "FG-0008",
+    "category": "Finished Goods",
+    "uom": "m",
+    "reorder_min": 60,
+    "reorder_max": 252,
+    "stock_by_location": [
+      {
+        "location": "WH3/Production",
+        "qty": 122
+      },
+      {
+        "location": "WH1/Shipping",
+        "qty": 81
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B08JYQGS1X",
+    "brand": "Sz Machparts",
+    "unit_cost": 7.58,
+    "rating_number": 228,
+    "average_rating": 4.5
+  },
+  {
+    "name": "HBT HB7116P-KT 22 Gauge 3/8-Inch Crown Pneumatic Upholstery Stapler, Air Stapler Ki...",
+    "sku": "FG-0005",
+    "category": "Finished Goods",
+    "uom": "sets",
+    "reorder_min": 5,
+    "reorder_max": 21,
+    "stock_by_location": [
+      {
+        "location": "WH3/Production",
+        "qty": 14
+      },
+      {
+        "location": "WH1/Shipping",
+        "qty": 10
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B07ZWXXCYF",
+    "brand": "HBT",
+    "unit_cost": 36.8,
+    "rating_number": 266,
+    "average_rating": 4.6
+  },
+  {
+    "name": "Hadley H00850EC Compressor Kit",
+    "sku": "FG-0019",
+    "category": "Finished Goods",
+    "uom": "sets",
+    "reorder_min": 5,
+    "reorder_max": 21,
+    "stock_by_location": [
+      {
+        "location": "WH3/Production",
+        "qty": 8
+      },
+      {
+        "location": "WH1/Shipping",
+        "qty": 5
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B001O06GPS",
+    "brand": "Hadley",
+    "unit_cost": 279.39,
+    "rating_number": 25,
+    "average_rating": 4.3
+  },
+  {
+    "name": "Husqvarna 578943308 Blower Replacement Fuel Tank Assembly",
+    "sku": "FG-0013",
+    "category": "Finished Goods",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH3/Production",
+        "qty": 59
+      },
+      {
+        "location": "WH1/Shipping",
+        "qty": 39
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B00TD7F7WC",
+    "brand": "Husqvarna",
+    "unit_cost": 23.45,
+    "rating_number": 113,
+    "average_rating": 4.4
+  },
+  {
+    "name": "Hydronix SPC-25-2020 Polyester Pleated Sediment Water Filter, Washable & Reusable...",
+    "sku": "FG-0020",
+    "category": "Finished Goods",
+    "uom": "sets",
+    "reorder_min": 5,
+    "reorder_max": 21,
+    "stock_by_location": [
+      {
+        "location": "WH3/Production",
+        "qty": 15
+      },
+      {
+        "location": "WH1/Shipping",
+        "qty": 10
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B01CFOGPXE",
+    "brand": "Hydronix",
+    "unit_cost": 14.88,
+    "rating_number": 30,
+    "average_rating": 4.3
+  },
+  {
+    "name": "Moen TS3715BN 90-Degree Moentrol Modern Shower Trim Kit, Valve Required, Brushed Ni...",
+    "sku": "FG-0014",
+    "category": "Finished Goods",
+    "uom": "sets",
+    "reorder_min": 5,
+    "reorder_max": 21,
+    "stock_by_location": [
+      {
+        "location": "WH3/Production",
+        "qty": 10
+      },
+      {
+        "location": "WH1/Shipping",
+        "qty": 6
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B07V49ZSXH",
+    "brand": "Moen Incorporated",
+    "unit_cost": 506.93,
+    "rating_number": 39,
+    "average_rating": 4.3
+  },
+  {
+    "name": "Nautical Ship Anchor Shelf Bracket for Custom Shelves Rust Brown Cast Iron 7.75\" De...",
+    "sku": "FG-0015",
+    "category": "Finished Goods",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH3/Production",
+        "qty": 58
+      },
+      {
+        "location": "WH1/Shipping",
+        "qty": 38
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B01LZJCJQN",
+    "brand": "Import Wholesales",
+    "unit_cost": 17.99,
+    "rating_number": 59,
+    "average_rating": 4.5
+  },
+  {
+    "name": "New 58 Pcs Pro-Series 7/16\" T-Slot 3/8\"-16 Stud Clamping Kit for Bridgeport Mill",
+    "sku": "FG-0017",
+    "category": "Finished Goods",
+    "uom": "sets",
+    "reorder_min": 5,
+    "reorder_max": 21,
+    "stock_by_location": [
+      {
+        "location": "WH3/Production",
+        "qty": 8
+      },
+      {
+        "location": "WH1/Shipping",
+        "qty": 5
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B0813D2TF6",
+    "brand": "WFLNHB",
+    "unit_cost": 76.66,
+    "rating_number": 42,
+    "average_rating": 4.5
+  },
+  {
+    "name": "Pfister Stellen Bar Faucet with Pull Down Sprayer, Single Handle, High Arc, Matte B...",
+    "sku": "FG-0011",
+    "category": "Finished Goods",
+    "uom": "sets",
+    "reorder_min": 5,
+    "reorder_max": 21,
+    "stock_by_location": [
+      {
+        "location": "WH3/Production",
+        "qty": 16
+      },
+      {
+        "location": "WH1/Shipping",
+        "qty": 11
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B06XGD8N7N",
+    "brand": "Pfister",
+    "unit_cost": 187.15,
+    "rating_number": 96,
+    "average_rating": 4.5
+  },
+  {
+    "name": "SPX FENNER STONE KG13 4 Wire Hand Controller Lift Dump 2950-AC",
+    "sku": "FG-0016",
+    "category": "Finished Goods",
+    "uom": "rolls",
+    "reorder_min": 8,
+    "reorder_max": 33,
+    "stock_by_location": [
+      {
+        "location": "WH3/Production",
+        "qty": 15
+      },
+      {
+        "location": "WH1/Shipping",
+        "qty": 10
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B06Y29BQTV",
+    "brand": "SPX",
+    "unit_cost": 89.99,
+    "rating_number": 35,
+    "average_rating": 4.8
+  },
+  {
+    "name": "SUNNY SHOWER FP34 Pivot Swing Shower Door, 32.5\" - 34\" W x 72\" H Clear Glass Swing...",
+    "sku": "FG-0012",
+    "category": "Finished Goods",
+    "uom": "sets",
+    "reorder_min": 5,
+    "reorder_max": 21,
+    "stock_by_location": [
+      {
+        "location": "WH3/Production",
+        "qty": 14
+      },
+      {
+        "location": "WH1/Shipping",
+        "qty": 10
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B07VH9GWPS",
+    "brand": "SUNNY SHOWER",
+    "unit_cost": 389.99,
+    "rating_number": 66,
+    "average_rating": 4.3
+  },
+  {
+    "name": "Shelf Brackets - 6 inch Triangle Brackets for Shelves, Hidden Shelf Bracket, Heavy...",
+    "sku": "FG-0006",
+    "category": "Finished Goods",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH3/Production",
+        "qty": 64
+      },
+      {
+        "location": "WH1/Shipping",
+        "qty": 43
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B0C3RW29W3",
+    "brand": "Hinersound",
+    "unit_cost": 23.99,
+    "rating_number": 260,
+    "average_rating": 4.4
+  },
+  {
+    "name": "Simple Expressions Arts Wall Vinyl Decal Nursing is a Work of Heart Cute Inspiratio...",
+    "sku": "FG-0018",
+    "category": "Finished Goods",
+    "uom": "kg",
+    "reorder_min": 18,
+    "reorder_max": 75,
+    "stock_by_location": [
+      {
+        "location": "WH3/Production",
+        "qty": 8
+      },
+      {
+        "location": "WH1/Shipping",
+        "qty": 5
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B013HEHN9Q",
+    "brand": "Simple Expressions Arts",
+    "unit_cost": 12.99,
+    "rating_number": 43,
+    "average_rating": 4.7
+  },
+  {
+    "name": "Speakman S-4000 Showerhead, 2.5 GPM, Dusk Blue",
+    "sku": "FG-0002",
+    "category": "Finished Goods",
+    "uom": "sets",
+    "reorder_min": 7,
+    "reorder_max": 29,
+    "stock_by_location": [
+      {
+        "location": "WH3/Production",
+        "qty": 11
+      },
+      {
+        "location": "WH1/Shipping",
+        "qty": 7
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B01HH6LOHW",
+    "brand": "Speakman",
+    "unit_cost": 29.25,
+    "rating_number": 1166,
+    "average_rating": 4.6
+  },
+  {
+    "name": "SpiroPure Replacement for SDC-25-0501 5x2.5 Polypropylene 1 Micron Sediment Filter...",
+    "sku": "FG-0009",
+    "category": "Finished Goods",
+    "uom": "sets",
+    "reorder_min": 5,
+    "reorder_max": 21,
+    "stock_by_location": [
+      {
+        "location": "WH3/Production",
+        "qty": 2
+      },
+      {
+        "location": "WH1/Shipping",
+        "qty": 1
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B08T63TDM9",
+    "brand": "SpiroPure",
+    "unit_cost": 41.18,
+    "rating_number": 176,
+    "average_rating": 4.7
+  },
+  {
+    "name": "Stanley 15-106 6-3/8-Inch Length 6-3/4-Inch Frame Depth Coping Saw",
+    "sku": "FG-0007",
+    "category": "Finished Goods",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH3/Production",
+        "qty": 43
+      },
+      {
+        "location": "WH1/Shipping",
+        "qty": 28
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B00009OYG2",
+    "brand": "Stanley",
+    "unit_cost": 16.75,
+    "rating_number": 263,
+    "average_rating": 4.2
+  },
+  {
+    "name": "Upgrade Hydro Shower Jet Head High Pressure Hydrojet Shower Head Propeller Driven V...",
+    "sku": "FG-0003",
+    "category": "Finished Goods",
+    "uom": "sets",
+    "reorder_min": 5,
+    "reorder_max": 21,
+    "stock_by_location": [
+      {
+        "location": "WH3/Production",
+        "qty": 11
+      },
+      {
+        "location": "WH1/Shipping",
+        "qty": 7
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B0BNZ888C7",
+    "brand": "Besititli",
+    "unit_cost": 32.99,
+    "rating_number": 1905,
+    "average_rating": 3.4
+  },
+  {
+    "name": "Wolfride 10Pcs Router Bit Bearing Kit Top Mounted Bearings for Router Bit|Interior...",
+    "sku": "FG-0004",
+    "category": "Finished Goods",
+    "uom": "sets",
+    "reorder_min": 5,
+    "reorder_max": 21,
+    "stock_by_location": [
+      {
+        "location": "WH3/Production",
+        "qty": 12
+      },
+      {
+        "location": "WH1/Shipping",
+        "qty": 8
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B086WG2S39",
+    "brand": "Wolfride",
+    "unit_cost": 9.97,
+    "rating_number": 500,
+    "average_rating": 4.6
+  },
+  {
+    "name": "goldenwarm 12 Pack Cabinet Knobs Black T Knobs Modern Drawer Knobs Matte Black Sing...",
+    "sku": "FG-0001",
+    "category": "Finished Goods",
+    "uom": "pcs",
+    "reorder_min": 136,
+    "reorder_max": 571,
+    "stock_by_location": [
+      {
+        "location": "WH3/Production",
+        "qty": 329
+      },
+      {
+        "location": "WH1/Shipping",
+        "qty": 219
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B09WJY1BWH",
+    "brand": "goldenwarm",
+    "unit_cost": 17.99,
+    "rating_number": 1617,
+    "average_rating": 4.6
+  },
+  {
+    "name": "10 Pieces Colored Masking Tape Rainbow Masking Tape Labelling Tape Graphic Art Pain...",
+    "sku": "PK-0009",
+    "category": "Packaging",
+    "uom": "rolls",
+    "reorder_min": 8,
+    "reorder_max": 33,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_B",
+        "qty": 3
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 2
+      },
+      {
+        "location": "WH1/Receiving",
+        "qty": 1
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B07SXC4KJG",
+    "brand": "JTEEY",
+    "unit_cost": 11.99,
+    "rating_number": 477,
+    "average_rating": 4.3
+  },
+  {
+    "name": "3MT SHANK TO 1/2\"-20 THREADED DRILL CHUCK ARBOR HARDENED MORSE TAPER MT3 ADAPTER",
+    "sku": "PK-0025",
+    "category": "Packaging",
+    "uom": "rolls",
+    "reorder_min": 8,
+    "reorder_max": 33,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_B",
+        "qty": 14
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 11
+      },
+      {
+        "location": "WH1/Receiving",
+        "qty": 7
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B01N59TF15",
+    "brand": "MHC Industrial Supply",
+    "unit_cost": 10.99,
+    "rating_number": 12,
+    "average_rating": 4.7
+  },
+  {
+    "name": "4 Pack Strong Magnetic Hooks for Hanging Coats and Bags, 100lbs Magnet Hooks Heavy...",
+    "sku": "PK-0013",
+    "category": "Packaging",
+    "uom": "pcs",
+    "reorder_min": 24,
+    "reorder_max": 100,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_B",
+        "qty": 47
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 37
+      },
+      {
+        "location": "WH1/Receiving",
+        "qty": 21
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B0BC94TXCH",
+    "brand": "VNDUEEY",
+    "unit_cost": 18.99,
+    "rating_number": 235,
+    "average_rating": 4.5
+  },
+  {
+    "name": "Battery Operated String Lights-132FT 300 LED 8 Modes Outdoor/Indoor Waterproof Fair...",
+    "sku": "PK-0011",
+    "category": "Packaging",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_B",
+        "qty": 36
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 28
+      },
+      {
+        "location": "WH1/Receiving",
+        "qty": 15
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B08CV57XT3",
+    "brand": "Marchpower",
+    "unit_cost": 14.99,
+    "rating_number": 406,
+    "average_rating": 4.2
+  },
+  {
+    "name": "Beverly Rug Stair Treads for Wooden Steps, Stair Treads Carpet, Non Slip Stair Trea...",
+    "sku": "PK-0006",
+    "category": "Packaging",
+    "uom": "sets",
+    "reorder_min": 5,
+    "reorder_max": 21,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_B",
+        "qty": 8
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 6
+      },
+      {
+        "location": "WH1/Receiving",
+        "qty": 4
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B09NDXSKDZ",
+    "brand": "Beverly Rug",
+    "unit_cost": 29.85,
+    "rating_number": 540,
+    "average_rating": 4.3
+  },
+  {
+    "name": "Bokaiya 5 Pair of 10 Inch Full Extension Side Mount Ball Bearing Sliding Drawer Sli...",
+    "sku": "PK-0007",
+    "category": "Packaging",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_B",
+        "qty": 24
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 19
+      },
+      {
+        "location": "WH1/Receiving",
+        "qty": 11
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B07BVLDFXP",
+    "brand": "Bokaiya",
+    "unit_cost": 23.19,
+    "rating_number": 415,
+    "average_rating": 4.7
+  },
+  {
+    "name": "Bussmann SFE-14 SFE 14 Amp Fast-Acting Glass Tube Fuses 1/4\" x 1-1/16\" - 5 per Box",
+    "sku": "PK-0024",
+    "category": "Packaging",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_B",
+        "qty": 32
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 25
+      },
+      {
+        "location": "WH1/Receiving",
+        "qty": 14
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B005CS2M9M",
+    "brand": "Bussman",
+    "unit_cost": 8.77,
+    "rating_number": 26,
+    "average_rating": 4.4
+  },
+  {
+    "name": "Clear 50 Pcs White Bakery Boxes & Cookie Boxes with Small Window in Heart Shape 4 x...",
+    "sku": "PK-0022",
+    "category": "Packaging",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_B",
+        "qty": 47
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 37
+      },
+      {
+        "location": "WH1/Receiving",
+        "qty": 21
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B09K22K7WQ",
+    "brand": "Generic",
+    "unit_cost": 23.97,
+    "rating_number": 21,
+    "average_rating": 4.9
+  },
+  {
+    "name": "CoBak Server Book - Waitress Book Organizer with Zipper Pouch for Restaurant Waitst...",
+    "sku": "PK-0001",
+    "category": "Packaging",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_B",
+        "qty": 28
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 22
+      },
+      {
+        "location": "WH1/Receiving",
+        "qty": 12
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B09NZJBMSN",
+    "brand": "CoBak",
+    "unit_cost": 6.99,
+    "rating_number": 6408,
+    "average_rating": 4.6
+  },
+  {
+    "name": "Delta Shower Doors SD3276471 Trinsic Semi-Frameless Traditional Sliding Shower Door...",
+    "sku": "PK-0008",
+    "category": "Packaging",
+    "uom": "sets",
+    "reorder_min": 5,
+    "reorder_max": 21,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_B",
+        "qty": 12
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 9
+      },
+      {
+        "location": "WH1/Receiving",
+        "qty": 5
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B086DLNGRB",
+    "brand": "Delta Shower Doors",
+    "unit_cost": 436.04,
+    "rating_number": 264,
+    "average_rating": 4.4
+  },
+  {
+    "name": "ECOptimize Paper Bags with Handles, 30 PCS Brown 5.9\" x 3\" x 8\" - Eco-Friendly, Foo...",
+    "sku": "PK-0018",
+    "category": "Packaging",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_B",
+        "qty": 7
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 5
+      },
+      {
+        "location": "WH1/Receiving",
+        "qty": 3
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B0BFPGRHFC",
+    "brand": "ECOptimize",
+    "unit_cost": 11.95,
+    "rating_number": 74,
+    "average_rating": 4.7
+  },
+  {
+    "name": "HDPE Handled Plastic T-Shirt Bags, Grocery Bags, White with\"Thank You\" Print, 11.5\"...",
+    "sku": "PK-0004",
+    "category": "Packaging",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_B",
+        "qty": 27
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 21
+      },
+      {
+        "location": "WH1/Receiving",
+        "qty": 12
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B07L5YSMWY",
+    "brand": "Generic",
+    "unit_cost": 36.0,
+    "rating_number": 675,
+    "average_rating": 4.5
+  },
+  {
+    "name": "Hazet 810SPC/21 Screwdriver Set\"Jumbox\" 21 Piece",
+    "sku": "PK-0015",
+    "category": "Packaging",
+    "uom": "sets",
+    "reorder_min": 5,
+    "reorder_max": 21,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_B",
+        "qty": 9
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 7
+      },
+      {
+        "location": "WH1/Receiving",
+        "qty": 4
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B00J93BKLC",
+    "brand": "Hazet",
+    "unit_cost": 91.56,
+    "rating_number": 121,
+    "average_rating": 4.5
+  },
+  {
+    "name": "Insulated Nylon Heated Pizza/Food Delivery Bag Black Food Packing Nylon Bag by 23in...",
+    "sku": "PK-0023",
+    "category": "Packaging",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_B",
+        "qty": 33
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 26
+      },
+      {
+        "location": "WH1/Receiving",
+        "qty": 15
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B07D7SYNBT",
+    "brand": "VCjuice",
+    "unit_cost": 107.47,
+    "rating_number": 26,
+    "average_rating": 3.8
+  },
+  {
+    "name": "MEIGGTOOL 4PCS Core Box Router Bit Kit, 1/4-Inch Shank Round Nose, Round Groove Mil...",
+    "sku": "PK-0020",
+    "category": "Packaging",
+    "uom": "sets",
+    "reorder_min": 5,
+    "reorder_max": 21,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_B",
+        "qty": 9
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 7
+      },
+      {
+        "location": "WH1/Receiving",
+        "qty": 4
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B0BHN6RFN6",
+    "brand": "MEIGGTOOL",
+    "unit_cost": 12.99,
+    "rating_number": 54,
+    "average_rating": 4.6
+  },
+  {
+    "name": "MHDMAG Magnetic Hooks for Hanging Coats, Magnet Hooks Heavy Duty Magnet Holder, Neo...",
+    "sku": "PK-0010",
+    "category": "Packaging",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_B",
+        "qty": 38
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 29
+      },
+      {
+        "location": "WH1/Receiving",
+        "qty": 17
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B0895MT54Y",
+    "brand": "MHDMAG",
+    "unit_cost": 15.99,
+    "rating_number": 350,
+    "average_rating": 4.5
+  },
+  {
+    "name": "New Star Foodservice 51155 Insulated Pizza Delivery Bag, 22\" by 22\" by 13\", Black",
+    "sku": "PK-0017",
+    "category": "Packaging",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_B",
+        "qty": 36
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 28
+      },
+      {
+        "location": "WH1/Receiving",
+        "qty": 16
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B07PPJR6TT",
+    "brand": "New Star Foodservice",
+    "unit_cost": 43.97,
+    "rating_number": 115,
+    "average_rating": 4.5
+  },
+  {
+    "name": "O'CREME White-Top Scalloped Round Cake and Pastry Board 3/32 Inch Thick, 10 Inch Di...",
+    "sku": "PK-0026",
+    "category": "Packaging",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_B",
+        "qty": 31
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 24
+      },
+      {
+        "location": "WH1/Receiving",
+        "qty": 13
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B0BKTLGR68",
+    "brand": "O'CREME",
+    "unit_cost": 14.99,
+    "rating_number": 6,
+    "average_rating": 5.0
+  },
+  {
+    "name": "Oasis Supply Disposable Red and White Checkered Paperboard Food Trays, Carnivals, F...",
+    "sku": "PK-0021",
+    "category": "Packaging",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_B",
+        "qty": 49
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 38
+      },
+      {
+        "location": "WH1/Receiving",
+        "qty": 22
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B097CJ7DJZ",
+    "brand": "Oasis Supply",
+    "unit_cost": 19.95,
+    "rating_number": 27,
+    "average_rating": 4.5
+  },
+  {
+    "name": "Osimir Outdoor Wall Lantern Light, 1 Light Exterior Wall Sconce Lantern in Black Fi...",
+    "sku": "PK-0012",
+    "category": "Packaging",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_B",
+        "qty": 24
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 19
+      },
+      {
+        "location": "WH1/Receiving",
+        "qty": 11
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B0BZP7QFWD",
+    "brand": "Osimir",
+    "unit_cost": 85.99,
+    "rating_number": 205,
+    "average_rating": 4.5
+  },
+  {
+    "name": "PaperLanternStore.com 24 Inch Solid White Cut-Out Paper Star Lantern, Hanging Decor...",
+    "sku": "PK-0014",
+    "category": "Packaging",
+    "uom": "pcs",
+    "reorder_min": 243,
+    "reorder_max": 1020,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_B",
+        "qty": 394
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 306
+      },
+      {
+        "location": "WH1/Receiving",
+        "qty": 175
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B01M0A0333",
+    "brand": "Quasimoon",
+    "unit_cost": 9.26,
+    "rating_number": 221,
+    "average_rating": 4.2
+  },
+  {
+    "name": "Spot Nails Spot Nails 3616PG-10M 16 Gauge Staples with 1-inch Crown and 2-inch Leg...",
+    "sku": "PK-0016",
+    "category": "Packaging",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_B",
+        "qty": 33
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 26
+      },
+      {
+        "location": "WH1/Receiving",
+        "qty": 14
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B0024NKL5K",
+    "brand": "Spot Nails",
+    "unit_cost": 89.94,
+    "rating_number": 118,
+    "average_rating": 4.5
+  },
+  {
+    "name": "Sunlite 40455 LED A19 Colored Light Bulb, 3 Watts (25w Equivalent), E26 Medium Base...",
+    "sku": "PK-0002",
+    "category": "Packaging",
+    "uom": "pcs",
+    "reorder_min": 31,
+    "reorder_max": 130,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_B",
+        "qty": 60
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 47
+      },
+      {
+        "location": "WH1/Receiving",
+        "qty": 27
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B09HRSKRFB",
+    "brand": "Sunlite",
+    "unit_cost": 15.99,
+    "rating_number": 2352,
+    "average_rating": 4.7
+  },
+  {
+    "name": "VWAQ Mailbox Address Decal Set of 2 - Insert Street Name & Address Personalized Dec...",
+    "sku": "PK-0003",
+    "category": "Packaging",
+    "uom": "sets",
+    "reorder_min": 5,
+    "reorder_max": 21,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_B",
+        "qty": 8
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 6
+      },
+      {
+        "location": "WH1/Receiving",
+        "qty": 4
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B07D2LKJKY",
+    "brand": "VWAQ",
+    "unit_cost": 17.99,
+    "rating_number": 1833,
+    "average_rating": 4.7
+  },
+  {
+    "name": "YASFEL 6 Inch Shower Arm Modern Wall Mounted Shower Extension Arm Pipe with Flange...",
+    "sku": "PK-0005",
+    "category": "Packaging",
+    "uom": "rolls",
+    "reorder_min": 18,
+    "reorder_max": 75,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_B",
+        "qty": 29
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 23
+      },
+      {
+        "location": "WH1/Receiving",
+        "qty": 13
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B0B2DPG88P",
+    "brand": "YASFEL",
+    "unit_cost": 9.59,
+    "rating_number": 564,
+    "average_rating": 4.7
+  },
+  {
+    "name": "for Polaris RZR Dash Rocker Switch Plate Panel 900 900s 1000s XP1000 2015-2018",
+    "sku": "PK-0019",
+    "category": "Packaging",
+    "uom": "pcs",
+    "reorder_min": 44,
+    "reorder_max": 184,
+    "stock_by_location": [
+      {
+        "location": "WH1/Rack_B",
+        "qty": 88
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 69
+      },
+      {
+        "location": "WH1/Receiving",
+        "qty": 39
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B07H8V6SP4",
+    "brand": "BBBOX",
+    "unit_cost": 17.99,
+    "rating_number": 83,
+    "average_rating": 4.2
+  },
+  {
+    "name": "1\" Adhesive Furniture Sliders -Furnigear Chair Glides PTFE Mover Slide on Furniture...",
+    "sku": "RM-0019",
+    "category": "Raw Materials",
+    "uom": "sets",
+    "reorder_min": 5,
+    "reorder_max": 21,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 6
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 3
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 4
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B07TLCQ3NR",
+    "brand": "Furnigear",
+    "unit_cost": 13.68,
+    "rating_number": 1454,
+    "average_rating": 3.9
+  },
+  {
+    "name": "40 Pieces Reflective Mailbox Number Sticker Decal Adhesive Reflective Address Numbe...",
+    "sku": "RM-0032",
+    "category": "Raw Materials",
+    "uom": "kg",
+    "reorder_min": 24,
+    "reorder_max": 100,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 58
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 29
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 29
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B08MTCHMS8",
+    "brand": "Zonon",
+    "unit_cost": 10.99,
+    "rating_number": 555,
+    "average_rating": 4.5
+  },
+  {
+    "name": "50-5401 TruePower 18\" X 12\" Mover's Dolly, 1000lbs Furniture Appliance, 4 x 3\" Rubb...",
+    "sku": "RM-0013",
+    "category": "Raw Materials",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 32
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 16
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 16
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B089CPCV77",
+    "brand": "1st Web Sales",
+    "unit_cost": 34.8,
+    "rating_number": 1612,
+    "average_rating": 4.4
+  },
+  {
+    "name": "ADC 603RGW Adscope 603 Premium Stainless Steel Clinician Stethoscope with Tunable A...",
+    "sku": "RM-0007",
+    "category": "Raw Materials",
+    "uom": "m",
+    "reorder_min": 60,
+    "reorder_max": 252,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 149
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 74
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 75
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B000NM0ZXM",
+    "brand": "ADC",
+    "unit_cost": 81.65,
+    "rating_number": 2407,
+    "average_rating": 4.7
+  },
+  {
+    "name": "Abyssaly White Wallpaper Peel and Stick Wallpaper 15.7 inch X 196.8 inch Self Adhes...",
+    "sku": "RM-0003",
+    "category": "Raw Materials",
+    "uom": "sets",
+    "reorder_min": 5,
+    "reorder_max": 21,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 12
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 6
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 7
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B0C1BWSKBV",
+    "brand": "Abyssaly",
+    "unit_cost": 16.99,
+    "rating_number": 10703,
+    "average_rating": 4.2
+  },
+  {
+    "name": "Ammex Indigo Nitrile Exam Gloves, 3 Mil, Latex Free, Powder Free, Textured, Disposa...",
+    "sku": "RM-0004",
+    "category": "Raw Materials",
+    "uom": "pairs",
+    "reorder_min": 12,
+    "reorder_max": 50,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 26
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 13
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 12
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B0BNHBRXVZ",
+    "brand": "Ammex",
+    "unit_cost": 12.0,
+    "rating_number": 6811,
+    "average_rating": 4.6
+  },
+  {
+    "name": "Blue ABS Filament 1.75mm, NovaMaker Less Odor ABS 3D Printer Filament Bundle, Dimen...",
+    "sku": "RM-0024",
+    "category": "Raw Materials",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 52
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 26
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 27
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B0C3DDX8ZP",
+    "brand": "NovaMaker",
+    "unit_cost": 29.99,
+    "rating_number": 937,
+    "average_rating": 4.2
+  },
+  {
+    "name": "Brute Magnetics 575 lb Magnet Fishing Kit | Includes Single Sided Rare Earth Neodym...",
+    "sku": "RM-0010",
+    "category": "Raw Materials",
+    "uom": "pairs",
+    "reorder_min": 12,
+    "reorder_max": 50,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 23
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 12
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 11
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B0BQ9NHTJY",
+    "brand": "Brute Magnetics",
+    "unit_cost": 72.99,
+    "rating_number": 1545,
+    "average_rating": 4.7
+  },
+  {
+    "name": "Danco 1-1/4-Inch Rubber Drain Stopper, White, Carded, 80225",
+    "sku": "RM-0002",
+    "category": "Raw Materials",
+    "uom": "sets",
+    "reorder_min": 13,
+    "reorder_max": 54,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 34
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 17
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 16
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B07KK66RKN",
+    "brand": "Danco",
+    "unit_cost": 2.38,
+    "rating_number": 10718,
+    "average_rating": 4.3
+  },
+  {
+    "name": "Disposable Vinyl Exam Gloves Large Latex Free & Powder Free 50 Pack 3 Mil Vinyl Exa...",
+    "sku": "RM-0005",
+    "category": "Raw Materials",
+    "uom": "pairs",
+    "reorder_min": 12,
+    "reorder_max": 50,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 22
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 11
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 10
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B08W24KHDZ",
+    "brand": "Wostar",
+    "unit_cost": 7.25,
+    "rating_number": 6012,
+    "average_rating": 4.4
+  },
+  {
+    "name": "Diversion Book Safe, Dictionary Secret Cash Safe Box with Combination Lock, Diversi...",
+    "sku": "RM-0023",
+    "category": "Raw Materials",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 25
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 12
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 13
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B07GBGPR1V",
+    "brand": "Bseash",
+    "unit_cost": 13.99,
+    "rating_number": 771,
+    "average_rating": 4.7
+  },
+  {
+    "name": "ELEGOO Standard LCD 3D Printer Resin, Fast UV-Curing 3D 405nm UV Resin Photopolymer...",
+    "sku": "RM-0017",
+    "category": "Raw Materials",
+    "uom": "kg",
+    "reorder_min": 18,
+    "reorder_max": 75,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 43
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 22
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 21
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B08NW2HRL8",
+    "brand": "ELEGOO",
+    "unit_cost": 31.99,
+    "rating_number": 1087,
+    "average_rating": 4.6
+  },
+  {
+    "name": "Edge Trim Black Small, Fits 1/16\" (60 Feet)",
+    "sku": "RM-0008",
+    "category": "Raw Materials",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 50
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 25
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 26
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B07BPMN4Y1",
+    "brand": "Seal Rubber",
+    "unit_cost": 59.99,
+    "rating_number": 2249,
+    "average_rating": 4.6
+  },
+  {
+    "name": "Glossy Marble Paper Granite Gray/White Wallpaper Peel and Stick Wallpaper Self Adhe...",
+    "sku": "RM-0011",
+    "category": "Raw Materials",
+    "uom": "sets",
+    "reorder_min": 7,
+    "reorder_max": 29,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 18
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 9
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 8
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B0BFBT87P1",
+    "brand": "HELLKIT",
+    "unit_cost": 46.99,
+    "rating_number": 2173,
+    "average_rating": 4.0
+  },
+  {
+    "name": "Hourleey 10 Pieces 1/2 Inch Pex Brass Full Port Shut Off Ball Valve HOT AND COLD, Q...",
+    "sku": "RM-0022",
+    "category": "Raw Materials",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 26
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 13
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 13
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B0BYJ6VP4Y",
+    "brand": "Hourleey",
+    "unit_cost": 39.99,
+    "rating_number": 675,
+    "average_rating": 4.8
+  },
+  {
+    "name": "JJ CARE Silicone Foam Dressing [Pack of 5], 2x2 Silicone Bandages for Wounds, Absor...",
+    "sku": "RM-0018",
+    "category": "Raw Materials",
+    "uom": "kg",
+    "reorder_min": 18,
+    "reorder_max": 75,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 6
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 3
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 4
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B0C4XMS3K5",
+    "brand": "JJ CARE",
+    "unit_cost": 11.89,
+    "rating_number": 1175,
+    "average_rating": 4.5
+  },
+  {
+    "name": "Joywayus 3 Way Shut Off Ball Valve 3/4\" Hose Barb Y Shaped 2 Switch Brass Fitting",
+    "sku": "RM-0028",
+    "category": "Raw Materials",
+    "uom": "m",
+    "reorder_min": 60,
+    "reorder_max": 252,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 143
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 72
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 71
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B082M2LSBJ",
+    "brand": "Joywayus",
+    "unit_cost": 19.99,
+    "rating_number": 728,
+    "average_rating": 4.3
+  },
+  {
+    "name": "K&J Premium 4ft Stainless Steel Washing Machine Hoses Burst Proof 2 Pack - Hot and...",
+    "sku": "RM-0006",
+    "category": "Raw Materials",
+    "uom": "m",
+    "reorder_min": 60,
+    "reorder_max": 252,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 94
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 47
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 48
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B0B29M4BPK",
+    "brand": "K&J",
+    "unit_cost": 19.24,
+    "rating_number": 4781,
+    "average_rating": 4.7
+  },
+  {
+    "name": "KK5 Adhesive Wall Hooks Hangers Heavy Duty 13 Pounds Sticky Hooks for Hanging for K...",
+    "sku": "RM-0016",
+    "category": "Raw Materials",
+    "uom": "sets",
+    "reorder_min": 5,
+    "reorder_max": 21,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 8
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 4
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 5
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B0BWLYYY6V",
+    "brand": "KK5",
+    "unit_cost": 17.98,
+    "rating_number": 1418,
+    "average_rating": 4.4
+  },
+  {
+    "name": "LAIGOO 12 Pack Adhesive Wall Hooks, Clear Self Adhesive Hooks Transparent Sticky To...",
+    "sku": "RM-0012",
+    "category": "Raw Materials",
+    "uom": "sets",
+    "reorder_min": 14,
+    "reorder_max": 58,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 36
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 18
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 17
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B0BTHT97FW",
+    "brand": "LAIGOO",
+    "unit_cost": 7.99,
+    "rating_number": 1894,
+    "average_rating": 4.5
+  },
+  {
+    "name": "M8-1.25 x 20mm Button Head Socket Cap Screws 304 Stainless Steel 18-8 Hex Socket Ca...",
+    "sku": "RM-0031",
+    "category": "Raw Materials",
+    "uom": "pairs",
+    "reorder_min": 12,
+    "reorder_max": 50,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 32
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 16
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 15
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B08P6D2BXQ",
+    "brand": "EASTLO",
+    "unit_cost": 13.99,
+    "rating_number": 482,
+    "average_rating": 4.8
+  },
+  {
+    "name": "Magshion 50Pcs Disposable Face Cover 3-Ply Filter Non Medical Breathable Earloop Ma...",
+    "sku": "RM-0020",
+    "category": "Raw Materials",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 26
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 13
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 13
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B08DHGBL9D",
+    "brand": "Magshion",
+    "unit_cost": 7.45,
+    "rating_number": 1020,
+    "average_rating": 4.6
+  },
+  {
+    "name": "Neoteck 6 inch Digital Caliper and Feeler Gauge Set, Stainless Steel Electronic Ver...",
+    "sku": "RM-0015",
+    "category": "Raw Materials",
+    "uom": "sets",
+    "reorder_min": 9,
+    "reorder_max": 37,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 17
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 8
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 9
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B0BJZXTGFV",
+    "brand": "Neoteck",
+    "unit_cost": 25.99,
+    "rating_number": 1270,
+    "average_rating": 4.6
+  },
+  {
+    "name": "Official Upgraded Ender 3 v2 Ender 3 CR-10 All Metal Extruder Aluminum MK8 Bowden E...",
+    "sku": "RM-0025",
+    "category": "Raw Materials",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 36
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 18
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 18
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B09SZBG35T",
+    "brand": "Sovol",
+    "unit_cost": 11.99,
+    "rating_number": 683,
+    "average_rating": 4.7
+  },
+  {
+    "name": "PLA 3D Printer Filament, PLA Filament Silk Silver Shiny Blue PLA Filament 1.75mm +...",
+    "sku": "RM-0027",
+    "category": "Raw Materials",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 8
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 4
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 3
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B0BNXK28ZY",
+    "brand": "LOCYFENS",
+    "unit_cost": 29.99,
+    "rating_number": 750,
+    "average_rating": 4.3
+  },
+  {
+    "name": "QWORK G80 Alloy Steel Hammerlock Coupling Link Connecting Link, 5/16\", 2 Pack, Red...",
+    "sku": "RM-0030",
+    "category": "Raw Materials",
+    "uom": "kg",
+    "reorder_min": 18,
+    "reorder_max": 75,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 28
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 14
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 13
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B08SBTNKP8",
+    "brand": "QWORK",
+    "unit_cost": 11.97,
+    "rating_number": 539,
+    "average_rating": 4.7
+  },
+  {
+    "name": "Red Devil 084650 84650 Window & Door Siliconized Acrylic Caulk, 10.1 oz, Gray",
+    "sku": "RM-0021",
+    "category": "Raw Materials",
+    "uom": "kg",
+    "reorder_min": 18,
+    "reorder_max": 75,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 29
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 14
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 15
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B08VKRHTHQ",
+    "brand": "Red Devil",
+    "unit_cost": 4.13,
+    "rating_number": 1036,
+    "average_rating": 4.3
+  },
+  {
+    "name": "Rubbermaid Commercial Products 1788472 BRUTE Heavy-Duty Round Recycling/Composting...",
+    "sku": "RM-0001",
+    "category": "Raw Materials",
+    "uom": "pcs",
+    "reorder_min": 21,
+    "reorder_max": 88,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 29
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 14
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 15
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B08Z44BSKH",
+    "brand": "Rubbermaid",
+    "unit_cost": 46.87,
+    "rating_number": 7756,
+    "average_rating": 4.7
+  },
+  {
+    "name": "Scotch 6132-BA-10, 75-Inch x 66-Foot x 0.007-Inch, Pack of 10 Super 33+ Vinyl Elect...",
+    "sku": "RM-0026",
+    "category": "Raw Materials",
+    "uom": "rolls",
+    "reorder_min": 73,
+    "reorder_max": 306,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 100
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 50
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 49
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B008BK74EG",
+    "brand": "Scotch",
+    "unit_cost": 63.49,
+    "rating_number": 514,
+    "average_rating": 4.8
+  },
+  {
+    "name": "Three Layers Disposable Respirator-50PCS, blue",
+    "sku": "RM-0009",
+    "category": "Raw Materials",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 8
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 4
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 3
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B085XK13LT",
+    "brand": "WowTowel",
+    "unit_cost": 20.0,
+    "rating_number": 2816,
+    "average_rating": 4.4
+  },
+  {
+    "name": "Trenton Gifts Crystal and Glass Repair File, Carbide Metal Diamond Grit Tool",
+    "sku": "RM-0029",
+    "category": "Raw Materials",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 42
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 21
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 22
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B07B8DMJDK",
+    "brand": "Trenton Gifts",
+    "unit_cost": 13.09,
+    "rating_number": 720,
+    "average_rating": 4.3
+  },
+  {
+    "name": "VAIIGO 360\u00b0 Rotating Microfiber Dust Mop, Hardwood Floor Mop, Dust Flat Mop, Stainl...",
+    "sku": "RM-0014",
+    "category": "Raw Materials",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 84,
+    "stock_by_location": [
+      {
+        "location": "WH1/Main_Store",
+        "qty": 30
+      },
+      {
+        "location": "WH2/Storage",
+        "qty": 15
+      },
+      {
+        "location": "WH3/Production",
+        "qty": 16
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B07VNRHPQF",
+    "brand": "VAIIGO",
+    "unit_cost": 22.99,
+    "rating_number": 1571,
+    "average_rating": 4.5
+  },
+  {
+    "name": "24 PCS Magnetic Garage Door Clavos- Decorative Hardware for House and Door Entry- M...",
+    "sku": "TE-0025",
+    "category": "Tools & Equipment",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 68,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 57
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 26
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 20
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B08B4LPK6M",
+    "brand": "Hoomuda",
+    "unit_cost": 16.99,
+    "rating_number": 183,
+    "average_rating": 4.7
+  },
+  {
+    "name": "BOSCH Accessories LBH012 5/8\" x 6\" Round Hammer Drill Bit",
+    "sku": "TE-0023",
+    "category": "Tools & Equipment",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 68,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 29
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 13
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 11
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B08179JHT6",
+    "brand": "BOSCH",
+    "unit_cost": 14.68,
+    "rating_number": 246,
+    "average_rating": 4.6
+  },
+  {
+    "name": "BeaverCraft Stropping Set of 3 Polishing Compound - Buffing Compound Leather Strop...",
+    "sku": "TE-0013",
+    "category": "Tools & Equipment",
+    "uom": "sets",
+    "reorder_min": 32,
+    "reorder_max": 108,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 80
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 36
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 30
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B08LLCTBTB",
+    "brand": "BeaverCraft",
+    "unit_cost": 8.95,
+    "rating_number": 706,
+    "average_rating": 4.4
+  },
+  {
+    "name": "Black Linen Small Cylinder Lamp Shade 8\" Top x 8\" Bottom x 11\" High (Spider) Replac...",
+    "sku": "TE-0030",
+    "category": "Tools & Equipment",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 68,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 58
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 26
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 21
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B07CJX5M9S",
+    "brand": "Springcrest",
+    "unit_cost": 24.99,
+    "rating_number": 115,
+    "average_rating": 4.4
+  },
+  {
+    "name": "Capri Tools 10 mm Deep Impact Socket, 3/8-Inch Drive, 6-Point, Metric",
+    "sku": "TE-0011",
+    "category": "Tools & Equipment",
+    "uom": "pairs",
+    "reorder_min": 12,
+    "reorder_max": 40,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 17
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 8
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 6
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B077W3411Y",
+    "brand": "Capri Tools",
+    "unit_cost": 6.95,
+    "rating_number": 753,
+    "average_rating": 4.8
+  },
+  {
+    "name": "Clockwise Tools MMSR-01 Premium Outside Micrometer Set with Carbide Tip 0-3\" Measur...",
+    "sku": "TE-0021",
+    "category": "Tools & Equipment",
+    "uom": "sets",
+    "reorder_min": 5,
+    "reorder_max": 17,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 11
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 5
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 4
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B0BWLRPBQX",
+    "brand": "Clockwise Tools Inc.",
+    "unit_cost": 87.68,
+    "rating_number": 200,
+    "average_rating": 4.7
+  },
+  {
+    "name": "DANSEER Industrial Oil Rubbed Bronze Semi Flush Mount Ceiling Light",
+    "sku": "TE-0016",
+    "category": "Tools & Equipment",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 68,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 41
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 19
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 15
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B09TD2J8SG",
+    "brand": "DANSEER",
+    "unit_cost": 29.99,
+    "rating_number": 436,
+    "average_rating": 4.7
+  },
+  {
+    "name": "Dixie Belle Paint Company Chalk Finish Furniture Paint | Amethyst (16 Fl Oz) | Matt...",
+    "sku": "TE-0003",
+    "category": "Tools & Equipment",
+    "uom": "kg",
+    "reorder_min": 20,
+    "reorder_max": 68,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 36
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 16
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 14
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B014AV8FY2",
+    "brand": "Dixie Belle Paint Company",
+    "unit_cost": 31.45,
+    "rating_number": 8455,
+    "average_rating": 4.7
+  },
+  {
+    "name": "FLIR One Pro LT iOS Pro-Grade Thermal Camera for Smartphones",
+    "sku": "TE-0006",
+    "category": "Tools & Equipment",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 68,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 44
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 20
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 16
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B0BTLWH9P2",
+    "brand": "FLIR",
+    "unit_cost": 299.0,
+    "rating_number": 1542,
+    "average_rating": 4.3
+  },
+  {
+    "name": "FreeMascot OD 6+ 190nm-550nm / 800nm-1100nm Wavelength Professional Laser Safety Gl...",
+    "sku": "TE-0018",
+    "category": "Tools & Equipment",
+    "uom": "pairs",
+    "reorder_min": 12,
+    "reorder_max": 40,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 5
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 2
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 2
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B07DC5SDGT",
+    "brand": "FreeMascot",
+    "unit_cost": 43.99,
+    "rating_number": 380,
+    "average_rating": 4.5
+  },
+  {
+    "name": "Geyoga 2 Pairs Cut Resistant Sleeves Thin Arm Protectors Arm Guard for Thin Skin an...",
+    "sku": "TE-0010",
+    "category": "Tools & Equipment",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 68,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 38
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 17
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 14
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B0BLV1JBRX",
+    "brand": "Geyoga",
+    "unit_cost": 17.99,
+    "rating_number": 1161,
+    "average_rating": 4.4
+  },
+  {
+    "name": "Hard-to-Find Fastener 014973248475 Grade 5 Fine Hex Cap Screws, 1/2-20 x 1, Piece-5...",
+    "sku": "TE-0027",
+    "category": "Tools & Equipment",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 68,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 8
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 4
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 3
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B00SJAE6N0",
+    "brand": "Hard-to-Find Fastener",
+    "unit_cost": 15.52,
+    "rating_number": 110,
+    "average_rating": 4.7
+  },
+  {
+    "name": "Hotodeal KN95 Face Mask 20 PCS,5 Layers Cup Dust Mask Against PM2.5 from Fire Smoke...",
+    "sku": "TE-0002",
+    "category": "Tools & Equipment",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 68,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 59
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 27
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 21
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B09P8GKDBL",
+    "brand": "Hotodeal",
+    "unit_cost": 16.19,
+    "rating_number": 68667,
+    "average_rating": 4.5
+  },
+  {
+    "name": "JKSafety 9 Pockets Class 2 High Visibility Zipper Front FAA Drone Pilot Safety Vest...",
+    "sku": "TE-0007",
+    "category": "Tools & Equipment",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 68,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 51
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 23
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 18
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B07SC3QDMS",
+    "brand": "JKSafety",
+    "unit_cost": 20.99,
+    "rating_number": 1929,
+    "average_rating": 4.7
+  },
+  {
+    "name": "KILZ Self-Priming Masonry, Stucco and Brick Paint, Interior/Exterior, Flat, Angel W...",
+    "sku": "TE-0012",
+    "category": "Tools & Equipment",
+    "uom": "kg",
+    "reorder_min": 18,
+    "reorder_max": 61,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 25
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 12
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 9
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B07JK8ZR2B",
+    "brand": "KILZ",
+    "unit_cost": 28.32,
+    "rating_number": 778,
+    "average_rating": 4.6
+  },
+  {
+    "name": "Loftus International Stink Bombs - Pack of 36",
+    "sku": "TE-0032",
+    "category": "Tools & Equipment",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 68,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 51
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 23
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 19
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B07S2NGN2G",
+    "brand": "Loftus International",
+    "unit_cost": 14.79,
+    "rating_number": 121,
+    "average_rating": 4.3
+  },
+  {
+    "name": "Mechanix WEARSMP-C91-010 Cut Resistant Gloves, Hi-Vis Yllw, L, PR,Fluorescent Yello...",
+    "sku": "TE-0017",
+    "category": "Tools & Equipment",
+    "uom": "pairs",
+    "reorder_min": 12,
+    "reorder_max": 40,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 20
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 9
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 8
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B09FL95V53",
+    "brand": "Mechanix Wear",
+    "unit_cost": 38.5,
+    "rating_number": 475,
+    "average_rating": 4.4
+  },
+  {
+    "name": "NWS 1351-49-VDE-190-SB VDE-7-1/2\" Electrician's Side Cutter",
+    "sku": "TE-0020",
+    "category": "Tools & Equipment",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 68,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 56
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 25
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 20
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B010NWWSBI",
+    "brand": "NWS",
+    "unit_cost": 38.45,
+    "rating_number": 344,
+    "average_rating": 4.5
+  },
+  {
+    "name": "Pegboard Bins - 3 Pack Blue Large - Hooks to Any Peg Board - Organize Hardware, Acc...",
+    "sku": "TE-0005",
+    "category": "Tools & Equipment",
+    "uom": "pcs",
+    "reorder_min": 23,
+    "reorder_max": 78,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 51
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 23
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 19
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B08MY5BRQT",
+    "brand": "Right Arrange",
+    "unit_cost": 14.9,
+    "rating_number": 2984,
+    "average_rating": 4.6
+  },
+  {
+    "name": "Picniva Black 48\" X 22\" Love Without Quote Wall Sticker Paper Quote Decal Art D\u00e9cor",
+    "sku": "TE-0008",
+    "category": "Tools & Equipment",
+    "uom": "kg",
+    "reorder_min": 18,
+    "reorder_max": 61,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 27
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 12
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 10
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B0788ZJ8SX",
+    "brand": "Picniva",
+    "unit_cost": 19.95,
+    "rating_number": 2004,
+    "average_rating": 4.4
+  },
+  {
+    "name": "Ringers TrafficR-307 Reflective Gloves for Traffic Control, High Visibility, Green...",
+    "sku": "TE-0019",
+    "category": "Tools & Equipment",
+    "uom": "pairs",
+    "reorder_min": 12,
+    "reorder_max": 40,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 20
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 9
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 7
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B0026IB6RU",
+    "brand": "Ringers Gloves",
+    "unit_cost": 19.42,
+    "rating_number": 436,
+    "average_rating": 4.3
+  },
+  {
+    "name": "Rust-Oleum 249111 Painter's Touch 2X Ultra Cover Spray Paint, 12 oz, Gloss Hunter G...",
+    "sku": "TE-0001",
+    "category": "Tools & Equipment",
+    "uom": "kg",
+    "reorder_min": 18,
+    "reorder_max": 61,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 30
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 14
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 11
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B0C3JWDK87",
+    "brand": "Rust-Oleum",
+    "unit_cost": 6.19,
+    "rating_number": 66892,
+    "average_rating": 4.7
+  },
+  {
+    "name": "SGT KNOTS Lightweight Hollow Braid Polypropylene Rope - Moisture & Chemical Resista...",
+    "sku": "TE-0015",
+    "category": "Tools & Equipment",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 68,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 34
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 15
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 12
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B01N706KPN",
+    "brand": "SGT KNOTS",
+    "unit_cost": 17.95,
+    "rating_number": 589,
+    "average_rating": 4.5
+  },
+  {
+    "name": "SPRING SEAON Washable Reusable Cotton Mouth Half Face Mouth for Men Women Dustproof...",
+    "sku": "TE-0022",
+    "category": "Tools & Equipment",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 68,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 32
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 15
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 12
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B087TPY1B1",
+    "brand": "SPRING SEAON",
+    "unit_cost": 11.88,
+    "rating_number": 282,
+    "average_rating": 4.4
+  },
+  {
+    "name": "STANLEY Screwdriver, All-in-1, 6-Way (68-012)",
+    "sku": "TE-0004",
+    "category": "Tools & Equipment",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 68,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 46
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 21
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 16
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B00NFYFDX2",
+    "brand": "Stanley",
+    "unit_cost": 8.95,
+    "rating_number": 3070,
+    "average_rating": 4.6
+  },
+  {
+    "name": "TOARTi 3D Watercolor Modern Vase Wall Stickers, White&Black Vases Decal for Living...",
+    "sku": "TE-0026",
+    "category": "Tools & Equipment",
+    "uom": "sets",
+    "reorder_min": 5,
+    "reorder_max": 17,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 7
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 3
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 2
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B08GLRNPN1",
+    "brand": "TOARTi",
+    "unit_cost": 10.96,
+    "rating_number": 257,
+    "average_rating": 3.4
+  },
+  {
+    "name": "VBoo Shoe Covers with Zipper Hard Sole Version Waterproof Shoe Covers Reusable Galo...",
+    "sku": "TE-0029",
+    "category": "Tools & Equipment",
+    "uom": "pairs",
+    "reorder_min": 12,
+    "reorder_max": 40,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 35
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 16
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 12
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B0BGX25C58",
+    "brand": "VBoo",
+    "unit_cost": 11.99,
+    "rating_number": 149,
+    "average_rating": 4.0
+  },
+  {
+    "name": "Vaper 19391 4-Piece Air Blow Gun Set",
+    "sku": "TE-0024",
+    "category": "Tools & Equipment",
+    "uom": "sets",
+    "reorder_min": 7,
+    "reorder_max": 23,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 14
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 6
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 6
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B09D94T1JP",
+    "brand": "Vaper",
+    "unit_cost": 12.89,
+    "rating_number": 286,
+    "average_rating": 4.1
+  },
+  {
+    "name": "Voxkin Blue Disposable Medical Face Masks Pack of 50 - Lab Tested, 3 Ply Protection...",
+    "sku": "TE-0014",
+    "category": "Tools & Equipment",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 68,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 45
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 20
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 16
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Industrial and Scientific",
+    "source_ref": "B08QRHFTGY",
+    "brand": "Voxkin",
+    "unit_cost": 18.99,
+    "rating_number": 626,
+    "average_rating": 4.5
+  },
+  {
+    "name": "Wagner 0514230 or 514230 Spatter 9\" Snap Arm Shield - OEM",
+    "sku": "TE-0031",
+    "category": "Tools & Equipment",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 68,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 53
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 24
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 19
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B01ELZ3FCE",
+    "brand": "Wagner",
+    "unit_cost": 9.89,
+    "rating_number": 138,
+    "average_rating": 4.1
+  },
+  {
+    "name": "YARDGARD 308259B 36 inch x 25 Foot, Green Hardware Cloth",
+    "sku": "TE-0028",
+    "category": "Tools & Equipment",
+    "uom": "pcs",
+    "reorder_min": 20,
+    "reorder_max": 68,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 33
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 15
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 12
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B0816XTYNV",
+    "brand": "Midwest Air Technologies Inc",
+    "unit_cost": 68.13,
+    "rating_number": 89,
+    "average_rating": 4.7
+  },
+  {
+    "name": "ufengke Black Dandelions and Butterflies Flying in The Wind Wall Decals, Living Roo...",
+    "sku": "TE-0009",
+    "category": "Tools & Equipment",
+    "uom": "kg",
+    "reorder_min": 18,
+    "reorder_max": 61,
+    "stock_by_location": [
+      {
+        "location": "WH2/Storage",
+        "qty": 7
+      },
+      {
+        "location": "WH3/QC_Area",
+        "qty": 3
+      },
+      {
+        "location": "WH1/Main_Store",
+        "qty": 3
+      }
+    ],
+    "source_dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+    "source_ref": "B00W74IN2O",
+    "brand": "ufengke",
+    "unit_cost": 13.06,
+    "rating_number": 1503,
+    "average_rating": 4.3
+  }
+]

@@ -1,114 +1,347 @@
 import 'dotenv/config';
 import bcrypt from 'bcryptjs';
 import { v4 as uuidv4 } from 'uuid';
-import { initDB, db, saveDB } from './db.js';
+import { initDB, db, saveDB, storageMode } from './db.js';
+import { createDefaultData } from './postgres/schema.js';
+import { loadCuratedData } from './curation/loadCuratedData.js';
 
 await initDB();
 
-console.log('🌱 Seeding CoreInventory...');
+const curated = loadCuratedData();
 
-// Clear
-db.data.users = []; db.data.categories = []; db.data.warehouses = []; db.data.locations = [];
-db.data.products = []; db.data.stockLevels = []; db.data.receipts = []; db.data.receiptLines = [];
-db.data.deliveries = []; db.data.deliveryLines = []; db.data.transfers = []; db.data.transferLines = [];
-db.data.adjustments = []; db.data.adjustmentLines = []; db.data.moveHistory = [];
+console.log(`Seeding CoreInventory using ${storageMode} storage...`);
 
-// Users
-const managerId = uuidv4(), staffId = uuidv4();
-db.data.users.push({ id: managerId, name: 'Alex Manager', email: 'manager@coreinventory.com', password_hash: bcrypt.hashSync('manager123', 10), role: 'manager', avatar: null, created_at: new Date().toISOString() });
-db.data.users.push({ id: staffId, name: 'Sam Staff', email: 'staff@coreinventory.com', password_hash: bcrypt.hashSync('staff123', 10), role: 'staff', avatar: null, created_at: new Date().toISOString() });
-
-// Categories
-const catNames = ['Raw Materials', 'Finished Goods', 'Electronics', 'Packaging', 'Tools & Equipment'];
-const catIds = catNames.map(name => { const id = uuidv4(); db.data.categories.push({ id, name, description: '', created_at: new Date().toISOString() }); return id; });
-
-// Warehouses
-const wh1 = uuidv4(), wh2 = uuidv4(), wh3 = uuidv4();
-db.data.warehouses.push({ id: wh1, name: 'Main Warehouse', short_code: 'WH1', address: '123 Industrial Zone, Sector 7', active: true, created_at: new Date().toISOString() });
-db.data.warehouses.push({ id: wh2, name: 'North Depot', short_code: 'WH2', address: '456 North Road, Warehouse District', active: true, created_at: new Date().toISOString() });
-db.data.warehouses.push({ id: wh3, name: 'Production Facility', short_code: 'WH3', address: '789 Factory Lane, Industrial Park', active: true, created_at: new Date().toISOString() });
-
-// Locations
-const locs = [
-    { id: uuidv4(), wh: wh1, name: 'Main Store', path: 'WH1/Main_Store' },
-    { id: uuidv4(), wh: wh1, name: 'Receiving Area', path: 'WH1/Receiving' },
-    { id: uuidv4(), wh: wh1, name: 'Rack A', path: 'WH1/Rack_A' },
-    { id: uuidv4(), wh: wh1, name: 'Rack B', path: 'WH1/Rack_B' },
-    { id: uuidv4(), wh: wh1, name: 'Shipping Bay', path: 'WH1/Shipping' },
-    { id: uuidv4(), wh: wh2, name: 'Storage Floor', path: 'WH2/Storage' },
-    { id: uuidv4(), wh: wh2, name: 'Cold Storage', path: 'WH2/Cold_Storage' },
-    { id: uuidv4(), wh: wh3, name: 'Production Floor', path: 'WH3/Production' },
-    { id: uuidv4(), wh: wh3, name: 'Quality Control', path: 'WH3/QC_Area' },
-];
-locs.forEach(l => db.data.locations.push({ id: l.id, warehouse_id: l.wh, name: l.name, full_path: l.path, type: 'internal', active: true }));
-
-// Products
-const prods = [
-    { name: 'Steel Rods', sku: 'SR-001', cat: 0, uom: 'kg', min: 50, max: 500 },
-    { name: 'Aluminum Sheets', sku: 'AL-002', cat: 0, uom: 'kg', min: 30, max: 300 },
-    { name: 'Copper Wire', sku: 'CW-003', cat: 0, uom: 'm', min: 100, max: 1000 },
-    { name: 'Iron Bolts M8', sku: 'IB-004', cat: 0, uom: 'pcs', min: 200, max: 2000 },
-    { name: 'Carbon Fiber Panel', sku: 'CF-005', cat: 0, uom: 'pcs', min: 10, max: 100 },
-    { name: 'Circuit Board v2', sku: 'CB-006', cat: 2, uom: 'pcs', min: 20, max: 200 },
-    { name: 'Power Supply Unit', sku: 'PS-007', cat: 2, uom: 'pcs', min: 10, max: 100 },
-    { name: 'HDMI Cable 2m', sku: 'HC-008', cat: 2, uom: 'pcs', min: 50, max: 500 },
-    { name: 'Industrial Sensor', sku: 'IS-009', cat: 2, uom: 'pcs', min: 15, max: 150 },
-    { name: 'LED Driver Module', sku: 'LD-010', cat: 2, uom: 'pcs', min: 25, max: 250 },
-    { name: 'Steel Frame Assembly', sku: 'FA-011', cat: 1, uom: 'pcs', min: 5, max: 50 },
-    { name: 'Gear Mechanism Set', sku: 'GM-012', cat: 1, uom: 'sets', min: 10, max: 100 },
-    { name: 'Hydraulic Pump Unit', sku: 'HP-013', cat: 1, uom: 'pcs', min: 5, max: 30 },
-    { name: 'Cardboard Box Large', sku: 'CB-014', cat: 3, uom: 'pcs', min: 100, max: 1000 },
-    { name: 'Bubble Wrap Roll', sku: 'BW-015', cat: 3, uom: 'rolls', min: 20, max: 200 },
-    { name: 'Packing Tape', sku: 'PT-016', cat: 3, uom: 'rolls', min: 50, max: 500 },
-    { name: 'Torque Wrench', sku: 'TW-017', cat: 4, uom: 'pcs', min: 5, max: 20 },
-    { name: 'Drill Bit Set', sku: 'DB-018', cat: 4, uom: 'sets', min: 10, max: 50 },
-    { name: 'Safety Gloves L', sku: 'SG-019', cat: 4, uom: 'pairs', min: 30, max: 200 },
-    { name: 'Hard Hat Yellow', sku: 'HH-020', cat: 4, uom: 'pcs', min: 20, max: 100 },
-];
-const stockQtys = [320, 180, 750, 1200, 45, 85, 32, 220, 12, 140, 28, 42, 8, 650, 85, 380, 12, 25, 95, 55];
-const prodIds = prods.map((p, i) => {
-    const id = uuidv4();
-    db.data.products.push({ id, name: p.name, sku: p.sku, category_id: catIds[p.cat], uom: p.uom, reorder_min: p.min, reorder_max: p.max, active: true, created_at: new Date().toISOString() });
-    db.data.stockLevels.push({ id: uuidv4(), product_id: id, location_id: locs[i % 5].id, qty: stockQtys[i] });
-    if (i % 3 === 0) db.data.stockLevels.push({ id: uuidv4(), product_id: id, location_id: locs[5].id, qty: Math.floor(stockQtys[i] * 0.3) });
-    return id;
-});
-
-// Historical moves (50 entries over 30 days)
-const opTypes = ['receipt', 'delivery', 'transfer', 'adjustment'];
-const prefixes = { receipt: 'REC', delivery: 'DEL', transfer: 'INT', adjustment: 'ADJ' };
-for (let i = 0; i < 50; i++) {
-    const type = opTypes[i % 4];
-    const daysAgo = Math.floor(Math.random() * 30);
-    const createdAt = new Date(Date.now() - daysAgo * 86400000).toISOString();
-    db.data.moveHistory.push({
-        id: uuidv4(), operation_type: type, ref: `${prefixes[type]}-${String(i + 1).padStart(5, '0')}`,
-        product_id: prodIds[i % prodIds.length],
-        from_location_id: type === 'receipt' ? 'VENDOR' : locs[i % 5].id,
-        to_location_id: type === 'delivery' ? 'CUSTOMER' : locs[(i + 1) % 5].id,
-        qty: Math.floor(10 + Math.random() * 100), user_id: managerId, created_at: createdAt
-    });
+function mulberry32(seed) {
+  return function next() {
+    let t = seed += 0x6D2B79F5;
+    t = Math.imul(t ^ (t >>> 15), t | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
 }
 
-// Pending operations
-const rec1 = uuidv4();
-db.data.receipts.push({ id: rec1, ref: 'REC-00051', supplier: 'SteelTech Suppliers', warehouse_id: wh1, scheduled_date: new Date(Date.now() + 3 * 86400000).toISOString().split('T')[0], status: 'waiting', created_by: managerId, created_at: new Date().toISOString() });
-db.data.receiptLines.push({ id: uuidv4(), receipt_id: rec1, product_id: prodIds[0], expected_qty: 500, received_qty: 0, location_id: locs[1].id });
-db.data.receiptLines.push({ id: uuidv4(), receipt_id: rec1, product_id: prodIds[1], expected_qty: 200, received_qty: 0, location_id: locs[1].id });
+function isoOffset(days, hours = 0) {
+  return new Date(Date.now() + days * 86400000 + hours * 3600000).toISOString();
+}
 
-const rec2 = uuidv4();
-db.data.receipts.push({ id: rec2, ref: 'REC-00052', supplier: 'ElectroParts Inc.', warehouse_id: wh1, scheduled_date: new Date().toISOString().split('T')[0], status: 'ready', created_by: staffId, created_at: new Date().toISOString() });
-db.data.receiptLines.push({ id: uuidv4(), receipt_id: rec2, product_id: prodIds[5], expected_qty: 100, received_qty: 0, location_id: locs[2].id });
+function dateOffset(days) {
+  return isoOffset(days).split('T')[0];
+}
 
-const del1 = uuidv4();
-db.data.deliveries.push({ id: del1, ref: 'DEL-00051', customer: 'BuildCorp Ltd.', warehouse_id: wh1, scheduled_date: new Date(Date.now() + 2 * 86400000).toISOString().split('T')[0], status: 'waiting', created_by: managerId, created_at: new Date().toISOString() });
-db.data.deliveryLines.push({ id: uuidv4(), delivery_id: del1, product_id: prodIds[11], demand_qty: 30, done_qty: 0, location_id: locs[0].id });
+function quantityFor(product, operationType, random) {
+  const ranges = {
+    kg: { receipt: [50, 180], delivery: [15, 60], transfer: [10, 50], adjustment: [1, 8] },
+    m: { receipt: [80, 220], delivery: [20, 90], transfer: [30, 120], adjustment: [2, 12] },
+    pcs: { receipt: [20, 140], delivery: [8, 65], transfer: [10, 80], adjustment: [1, 6] },
+    rolls: { receipt: [10, 60], delivery: [4, 25], transfer: [4, 20], adjustment: [1, 4] },
+    sets: { receipt: [6, 35], delivery: [3, 12], transfer: [3, 10], adjustment: [1, 2] },
+    pairs: { receipt: [12, 80], delivery: [8, 30], transfer: [8, 24], adjustment: [1, 3] },
+  };
 
-const tr1 = uuidv4();
-db.data.transfers.push({ id: tr1, ref: 'INT-00051', from_location_id: locs[0].id, to_location_id: locs[7].id, scheduled_date: new Date(Date.now() + 86400000).toISOString().split('T')[0], status: 'draft', created_by: staffId, created_at: new Date().toISOString() });
-db.data.transferLines.push({ id: uuidv4(), transfer_id: tr1, product_id: prodIds[0], qty: 50 });
+  const [min, max] = (ranges[product.uom] || ranges.pcs)[operationType];
+  return Math.max(1, Math.round(min + random() * (max - min)));
+}
+
+function resolveTransferDestination(product, sourcePath) {
+  if (product.category === 'Finished Goods') {
+    return 'WH1/Shipping';
+  }
+  if (product.category === 'Packaging') {
+    return sourcePath === 'WH3/Production' ? 'WH1/Shipping' : 'WH3/Production';
+  }
+  if (product.category === 'Electronics') {
+    return sourcePath === 'WH1/Main_Store' ? 'WH1/Rack_A' : 'WH1/Main_Store';
+  }
+  if (product.category === 'Tools & Equipment') {
+    return 'WH2/Storage';
+  }
+  return 'WH3/Production';
+}
+
+function createHistoricalMoves({ products, usersByEmail, locationsByPath, productsBySku, curatedHistory }) {
+  if (Array.isArray(curatedHistory) && curatedHistory.length) {
+    return curatedHistory.map((move) => ({
+      id: uuidv4(),
+      operation_type: move.operation_type,
+      ref: move.ref,
+      product_id: productsBySku.get(move.sku)?.id || null,
+      from_location_id: locationsByPath.get(move.from_location)?.id || move.from_location || null,
+      to_location_id: locationsByPath.get(move.to_location)?.id || move.to_location || null,
+      qty: Number(move.qty) || 0,
+      user_id: usersByEmail.get(move.user_email)?.id || usersByEmail.get('manager@coreinventory.com').id,
+      created_at: move.created_at || new Date().toISOString(),
+    })).filter((move) => move.product_id);
+  }
+
+  const random = mulberry32(20260314);
+  const moves = [];
+  const counters = { receipt: 1, delivery: 1, transfer: 1, adjustment: 1 };
+  const operationTypes = ['receipt', 'transfer', 'delivery', 'adjustment'];
+  const prefixes = { receipt: 'REC-H', delivery: 'DEL-H', transfer: 'INT-H', adjustment: 'ADJ-H' };
+  const managerId = usersByEmail.get('manager@coreinventory.com').id;
+  const staffId = usersByEmail.get('staff@coreinventory.com').id;
+
+  for (let daysAgo = 29; daysAgo >= 0; daysAgo -= 1) {
+    const eventsToday = daysAgo % 5 === 0 ? 2 : 1;
+
+    for (let eventIndex = 0; eventIndex < eventsToday; eventIndex += 1) {
+      const operationType = operationTypes[(daysAgo + eventIndex) % operationTypes.length];
+      const productTemplate = products[(daysAgo * 3 + eventIndex * 7) % products.length];
+      const product = productsBySku.get(productTemplate.sku);
+      const baseLocationPath = productTemplate.stock_by_location[0]?.location || 'WH1/Main_Store';
+      const baseLocation = locationsByPath.get(baseLocationPath);
+      const qty = quantityFor(productTemplate, operationType, random);
+
+      let fromLocationId = baseLocation?.id || 'WAREHOUSE';
+      let toLocationId = baseLocation?.id || 'WAREHOUSE';
+
+      if (operationType === 'receipt') {
+        fromLocationId = 'VENDOR';
+      }
+      if (operationType === 'delivery') {
+        toLocationId = 'CUSTOMER';
+      }
+      if (operationType === 'transfer') {
+        const destinationPath = resolveTransferDestination(productTemplate, baseLocationPath);
+        toLocationId = locationsByPath.get(destinationPath)?.id || baseLocation?.id || 'WAREHOUSE';
+        if (toLocationId === fromLocationId) {
+          toLocationId = locationsByPath.get('WH1/Shipping')?.id || 'WAREHOUSE';
+        }
+      }
+      if (operationType === 'adjustment') {
+        const increase = random() > 0.5;
+        fromLocationId = increase ? 'ADJUSTMENT' : baseLocation?.id || 'ADJUSTMENT';
+        toLocationId = increase ? baseLocation?.id || 'ADJUSTMENT' : 'ADJUSTMENT';
+      }
+
+      moves.push({
+        id: uuidv4(),
+        operation_type: operationType,
+        ref: `${prefixes[operationType]}-${String(counters[operationType]).padStart(5, '0')}`,
+        product_id: product.id,
+        from_location_id: fromLocationId,
+        to_location_id: toLocationId,
+        qty,
+        user_id: operationType === 'delivery' ? staffId : managerId,
+        created_at: isoOffset(-daysAgo, eventIndex * 2),
+      });
+
+      counters[operationType] += 1;
+    }
+  }
+
+  return moves;
+}
+
+function clearData() {
+  db.data = createDefaultData();
+}
+
+clearData();
+
+const usersByEmail = new Map();
+for (const user of curated.users) {
+  const record = {
+    id: uuidv4(),
+    name: user.name,
+    email: user.email,
+    password_hash: bcrypt.hashSync(user.password, 10),
+    role: user.role,
+    avatar: user.avatar ?? null,
+    created_at: new Date().toISOString(),
+  };
+  db.data.users.push(record);
+  usersByEmail.set(record.email, record);
+}
+
+const categoriesByName = new Map();
+for (const category of curated.categories) {
+  const record = {
+    id: uuidv4(),
+    name: category.name,
+    description: category.description || '',
+    created_at: new Date().toISOString(),
+  };
+  db.data.categories.push(record);
+  categoriesByName.set(record.name, record);
+}
+
+const warehousesByCode = new Map();
+const locationsByPath = new Map();
+for (const warehouse of curated.warehouses) {
+  const warehouseRecord = {
+    id: uuidv4(),
+    name: warehouse.name,
+    short_code: warehouse.short_code,
+    address: warehouse.address || '',
+    active: true,
+    created_at: new Date().toISOString(),
+  };
+  db.data.warehouses.push(warehouseRecord);
+  warehousesByCode.set(warehouseRecord.short_code, warehouseRecord);
+
+  for (const location of warehouse.locations) {
+    const locationRecord = {
+      id: uuidv4(),
+      warehouse_id: warehouseRecord.id,
+      name: location.name,
+      full_path: location.full_path,
+      type: location.type || 'internal',
+      active: true,
+    };
+    db.data.locations.push(locationRecord);
+    locationsByPath.set(locationRecord.full_path, locationRecord);
+  }
+}
+
+const productsBySku = new Map();
+for (const product of curated.products) {
+  const productRecord = {
+    id: uuidv4(),
+    name: product.name,
+    sku: product.sku,
+    category_id: categoriesByName.get(product.category)?.id || null,
+    uom: product.uom,
+    reorder_min: product.reorder_min || 0,
+    reorder_max: product.reorder_max || 0,
+    active: true,
+    created_at: new Date().toISOString(),
+  };
+  db.data.products.push(productRecord);
+  productsBySku.set(productRecord.sku, productRecord);
+
+  for (const stockRow of product.stock_by_location || []) {
+    const location = locationsByPath.get(stockRow.location);
+    if (!location) {
+      continue;
+    }
+    db.data.stockLevels.push({
+      id: uuidv4(),
+      product_id: productRecord.id,
+      location_id: location.id,
+      qty: Number(stockRow.qty) || 0,
+    });
+  }
+}
+
+db.data.moveHistory = createHistoricalMoves({
+  products: curated.products,
+  usersByEmail,
+  locationsByPath,
+  productsBySku,
+  curatedHistory: curated.history,
+});
+
+for (const receipt of curated.operations.receipts || []) {
+  const record = {
+    id: uuidv4(),
+    ref: receipt.ref,
+    supplier: receipt.supplier,
+    warehouse_id: warehousesByCode.get(receipt.warehouse)?.id || null,
+    scheduled_date: dateOffset(receipt.scheduled_in_days || 0),
+    notes: receipt.notes || '',
+    status: receipt.status || 'draft',
+    created_by: usersByEmail.get(receipt.created_by)?.id || usersByEmail.get('manager@coreinventory.com').id,
+    created_at: new Date().toISOString(),
+  };
+  db.data.receipts.push(record);
+
+  for (const line of receipt.lines || []) {
+    db.data.receiptLines.push({
+      id: uuidv4(),
+      receipt_id: record.id,
+      product_id: productsBySku.get(line.sku)?.id || null,
+      expected_qty: Number(line.expected_qty) || 0,
+      received_qty: Number(line.received_qty) || 0,
+      location_id: locationsByPath.get(line.location)?.id || null,
+    });
+  }
+}
+
+for (const delivery of curated.operations.deliveries || []) {
+  const record = {
+    id: uuidv4(),
+    ref: delivery.ref,
+    customer: delivery.customer,
+    warehouse_id: warehousesByCode.get(delivery.warehouse)?.id || null,
+    scheduled_date: dateOffset(delivery.scheduled_in_days || 0),
+    notes: delivery.notes || '',
+    status: delivery.status || 'draft',
+    created_by: usersByEmail.get(delivery.created_by)?.id || usersByEmail.get('manager@coreinventory.com').id,
+    created_at: new Date().toISOString(),
+  };
+  db.data.deliveries.push(record);
+
+  for (const line of delivery.lines || []) {
+    db.data.deliveryLines.push({
+      id: uuidv4(),
+      delivery_id: record.id,
+      product_id: productsBySku.get(line.sku)?.id || null,
+      demand_qty: Number(line.demand_qty) || 0,
+      done_qty: Number(line.done_qty) || 0,
+      location_id: locationsByPath.get(line.location)?.id || null,
+    });
+  }
+}
+
+for (const transfer of curated.operations.transfers || []) {
+  const record = {
+    id: uuidv4(),
+    ref: transfer.ref,
+    from_location_id: locationsByPath.get(transfer.from_location)?.id || null,
+    to_location_id: locationsByPath.get(transfer.to_location)?.id || null,
+    scheduled_date: dateOffset(transfer.scheduled_in_days || 0),
+    notes: transfer.notes || '',
+    status: transfer.status || 'draft',
+    created_by: usersByEmail.get(transfer.created_by)?.id || usersByEmail.get('manager@coreinventory.com').id,
+    created_at: new Date().toISOString(),
+  };
+  db.data.transfers.push(record);
+
+  for (const line of transfer.lines || []) {
+    db.data.transferLines.push({
+      id: uuidv4(),
+      transfer_id: record.id,
+      product_id: productsBySku.get(line.sku)?.id || null,
+      qty: Number(line.qty) || 0,
+    });
+  }
+}
+
+for (const adjustment of curated.operations.adjustments || []) {
+  const adjustmentLocation = locationsByPath.get(adjustment.location);
+  const record = {
+    id: uuidv4(),
+    ref: adjustment.ref,
+    location_id: adjustmentLocation?.id || null,
+    notes: adjustment.notes || '',
+    status: adjustment.status || 'draft',
+    created_by: usersByEmail.get(adjustment.created_by)?.id || usersByEmail.get('manager@coreinventory.com').id,
+    created_at: new Date().toISOString(),
+  };
+  db.data.adjustments.push(record);
+
+  for (const line of adjustment.lines || []) {
+    const productId = productsBySku.get(line.sku)?.id || null;
+    const stockLevel = db.data.stockLevels.find((item) => item.product_id === productId && item.location_id === adjustmentLocation?.id);
+    const systemQty = Number(stockLevel?.qty || 0);
+    const hasChangeQty = line.change_qty !== undefined && line.change_qty !== null;
+    const changeQty = hasChangeQty ? Number(line.change_qty) || 0 : (Number(line.counted_qty) || systemQty) - systemQty;
+    const countedQty = hasChangeQty ? Math.max(0, systemQty + changeQty) : Math.max(0, Number(line.counted_qty) || systemQty);
+
+    db.data.adjustmentLines.push({
+      id: uuidv4(),
+      adjustment_id: record.id,
+      product_id: productId,
+      system_qty: systemQty,
+      counted_qty: countedQty,
+      change_qty: countedQty - systemQty,
+    });
+  }
+}
 
 await saveDB();
-console.log('🎉 Seed complete!');
+
+console.log('Seed complete.');
 console.log('  manager@coreinventory.com / manager123');
 console.log('  staff@coreinventory.com / staff123');

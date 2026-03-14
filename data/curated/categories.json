@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Raw Materials",
+    "description": "Curated industrial consumables, adhesives, tubing, stock material, and shop-floor inputs."
+  },
+  {
+    "name": "Finished Goods",
+    "description": "Packaged finished items and assembled inventory ready for dispatch."
+  },
+  {
+    "name": "Electronics",
+    "description": "Electronic components, control hardware, wiring accessories, and powered modules."
+  },
+  {
+    "name": "Packaging",
+    "description": "Packaging and storage supplies used for handling, labeling, and outbound preparation."
+  },
+  {
+    "name": "Tools & Equipment",
+    "description": "Tools, safety gear, fixtures, and workshop equipment."
+  }
+]

@@ -1,0 +1,698 @@
+{
+  "receipts": [
+    {
+      "ref": "REC-00001",
+      "supplier": "Prime Industrial Supply",
+      "warehouse": "WH1",
+      "scheduled_in_days": 0,
+      "status": "draft",
+      "created_by": "manager@coreinventory.com",
+      "notes": "Curated from external catalog demand profile.",
+      "lines": [
+        {
+          "sku": "PK-0014",
+          "expected_qty": 4,
+          "received_qty": 0,
+          "location": "WH1/Receiving"
+        },
+        {
+          "sku": "FG-0001",
+          "expected_qty": 1,
+          "received_qty": 0,
+          "location": "WH3/Production"
+        },
+        {
+          "sku": "RM-0026",
+          "expected_qty": 20,
+          "received_qty": 0,
+          "location": "WH1/Receiving"
+        }
+      ]
+    },
+    {
+      "ref": "REC-00002",
+      "supplier": "Northline Components",
+      "warehouse": "WH2",
+      "scheduled_in_days": 1,
+      "status": "draft",
+      "created_by": "staff@coreinventory.com",
+      "notes": "Curated from external catalog demand profile.",
+      "lines": [
+        {
+          "sku": "RM-0006",
+          "expected_qty": 9,
+          "received_qty": 0,
+          "location": "WH1/Receiving"
+        },
+        {
+          "sku": "EL-0002",
+          "expected_qty": 8,
+          "received_qty": 0,
+          "location": "WH1/Rack_A"
+        },
+        {
+          "sku": "RM-0007",
+          "expected_qty": 14,
+          "received_qty": 0,
+          "location": "WH1/Receiving"
+        }
+      ]
+    },
+    {
+      "ref": "REC-00003",
+      "supplier": "Applied Shop Materials",
+      "warehouse": "WH1",
+      "scheduled_in_days": 2,
+      "status": "draft",
+      "created_by": "manager@coreinventory.com",
+      "notes": "Curated from external catalog demand profile.",
+      "lines": [
+        {
+          "sku": "RM-0028",
+          "expected_qty": 11,
+          "received_qty": 0,
+          "location": "WH1/Receiving"
+        },
+        {
+          "sku": "EL-0015",
+          "expected_qty": 8,
+          "received_qty": 0,
+          "location": "WH1/Rack_A"
+        },
+        {
+          "sku": "EL-0017",
+          "expected_qty": 8,
+          "received_qty": 0,
+          "location": "WH1/Rack_A"
+        }
+      ]
+    },
+    {
+      "ref": "REC-00004",
+      "supplier": "Vector Warehouse Products",
+      "warehouse": "WH2",
+      "scheduled_in_days": 3,
+      "status": "draft",
+      "created_by": "staff@coreinventory.com",
+      "notes": "Curated from external catalog demand profile.",
+      "lines": [
+        {
+          "sku": "FG-0008",
+          "expected_qty": 8,
+          "received_qty": 0,
+          "location": "WH3/Production"
+        },
+        {
+          "sku": "EL-0027",
+          "expected_qty": 18,
+          "received_qty": 0,
+          "location": "WH1/Rack_A"
+        },
+        {
+          "sku": "EL-0029",
+          "expected_qty": 18,
+          "received_qty": 0,
+          "location": "WH1/Rack_A"
+        }
+      ]
+    },
+    {
+      "ref": "REC-00005",
+      "supplier": "Meridian Tools Distribution",
+      "warehouse": "WH1",
+      "scheduled_in_days": 4,
+      "status": "draft",
+      "created_by": "manager@coreinventory.com",
+      "notes": "Curated from external catalog demand profile.",
+      "lines": [
+        {
+          "sku": "PK-0019",
+          "expected_qty": 6,
+          "received_qty": 0,
+          "location": "WH1/Receiving"
+        },
+        {
+          "sku": "PK-0002",
+          "expected_qty": 1,
+          "received_qty": 0,
+          "location": "WH1/Receiving"
+        },
+        {
+          "sku": "TE-0013",
+          "expected_qty": 2,
+          "received_qty": 0,
+          "location": "WH2/Storage"
+        }
+      ]
+    },
+    {
+      "ref": "REC-00006",
+      "supplier": "Axis Packaging & Storage",
+      "warehouse": "WH2",
+      "scheduled_in_days": 5,
+      "status": "draft",
+      "created_by": "staff@coreinventory.com",
+      "notes": "Curated from external catalog demand profile.",
+      "lines": [
+        {
+          "sku": "RM-0032",
+          "expected_qty": 6,
+          "received_qty": 0,
+          "location": "WH1/Receiving"
+        },
+        {
+          "sku": "PK-0013",
+          "expected_qty": 1,
+          "received_qty": 0,
+          "location": "WH1/Receiving"
+        },
+        {
+          "sku": "RM-0001",
+          "expected_qty": 2,
+          "received_qty": 0,
+          "location": "WH1/Receiving"
+        }
+      ]
+    }
+  ],
+  "deliveries": [
+    {
+      "ref": "DEL-00001",
+      "customer": "BuildCorp Ltd.",
+      "warehouse": "WH1",
+      "scheduled_in_days": 0,
+      "status": "draft",
+      "created_by": "staff@coreinventory.com",
+      "notes": "Curated outbound demand from UCI quantity profile.",
+      "lines": [
+        {
+          "sku": "PK-0014",
+          "demand_qty": 12,
+          "done_qty": 0,
+          "location": "WH1/Rack_B"
+        },
+        {
+          "sku": "FG-0001",
+          "demand_qty": 24,
+          "done_qty": 0,
+          "location": "WH1/Shipping"
+        }
+      ]
+    },
+    {
+      "ref": "DEL-00002",
+      "customer": "Northwind Fabrication",
+      "warehouse": "WH1",
+      "scheduled_in_days": 1,
+      "status": "ready",
+      "created_by": "staff@coreinventory.com",
+      "notes": "Curated outbound demand from UCI quantity profile.",
+      "lines": [
+        {
+          "sku": "RM-0026",
+          "demand_qty": 1,
+          "done_qty": 0,
+          "location": "WH1/Main_Store"
+        },
+        {
+          "sku": "RM-0006",
+          "demand_qty": 8,
+          "done_qty": 0,
+          "location": "WH1/Main_Store"
+        }
+      ]
+    },
+    {
+      "ref": "DEL-00003",
+      "customer": "Vertex Distribution",
+      "warehouse": "WH1",
+      "scheduled_in_days": 2,
+      "status": "waiting",
+      "created_by": "staff@coreinventory.com",
+      "notes": "Curated outbound demand from UCI quantity profile.",
+      "lines": [
+        {
+          "sku": "EL-0002",
+          "demand_qty": 65,
+          "done_qty": 0,
+          "location": "WH1/Rack_A"
+        },
+        {
+          "sku": "RM-0007",
+          "demand_qty": 11,
+          "done_qty": 0,
+          "location": "WH1/Main_Store"
+        }
+      ]
+    },
+    {
+      "ref": "DEL-00004",
+      "customer": "Apex Maintenance Services",
+      "warehouse": "WH1",
+      "scheduled_in_days": 3,
+      "status": "draft",
+      "created_by": "staff@coreinventory.com",
+      "notes": "Curated outbound demand from UCI quantity profile.",
+      "lines": [
+        {
+          "sku": "RM-0028",
+          "demand_qty": 8,
+          "done_qty": 0,
+          "location": "WH1/Main_Store"
+        },
+        {
+          "sku": "EL-0015",
+          "demand_qty": 8,
+          "done_qty": 0,
+          "location": "WH1/Rack_A"
+        }
+      ]
+    },
+    {
+      "ref": "DEL-00005",
+      "customer": "Cobalt Manufacturing",
+      "warehouse": "WH1",
+      "scheduled_in_days": 4,
+      "status": "ready",
+      "created_by": "staff@coreinventory.com",
+      "notes": "Curated outbound demand from UCI quantity profile.",
+      "lines": [
+        {
+          "sku": "EL-0017",
+          "demand_qty": 8,
+          "done_qty": 0,
+          "location": "WH1/Rack_A"
+        },
+        {
+          "sku": "FG-0008",
+          "demand_qty": 130,
+          "done_qty": 0,
+          "location": "WH1/Shipping"
+        }
+      ]
+    },
+    {
+      "ref": "DEL-00006",
+      "customer": "SignalWorks Integrators",
+      "warehouse": "WH1",
+      "scheduled_in_days": 0,
+      "status": "waiting",
+      "created_by": "staff@coreinventory.com",
+      "notes": "Curated outbound demand from UCI quantity profile.",
+      "lines": [
+        {
+          "sku": "EL-0027",
+          "demand_qty": 22,
+          "done_qty": 0,
+          "location": "WH1/Rack_A"
+        },
+        {
+          "sku": "EL-0029",
+          "demand_qty": 36,
+          "done_qty": 0,
+          "location": "WH1/Rack_A"
+        }
+      ]
+    },
+    {
+      "ref": "DEL-00007",
+      "customer": "BuildCorp Ltd.",
+      "warehouse": "WH1",
+      "scheduled_in_days": 1,
+      "status": "draft",
+      "created_by": "staff@coreinventory.com",
+      "notes": "Curated outbound demand from UCI quantity profile.",
+      "lines": [
+        {
+          "sku": "PK-0019",
+          "demand_qty": 12,
+          "done_qty": 0,
+          "location": "WH1/Rack_B"
+        },
+        {
+          "sku": "PK-0002",
+          "demand_qty": 6,
+          "done_qty": 0,
+          "location": "WH1/Rack_B"
+        }
+      ]
+    },
+    {
+      "ref": "DEL-00008",
+      "customer": "Northwind Fabrication",
+      "warehouse": "WH1",
+      "scheduled_in_days": 2,
+      "status": "ready",
+      "created_by": "staff@coreinventory.com",
+      "notes": "Curated outbound demand from UCI quantity profile.",
+      "lines": [
+        {
+          "sku": "TE-0013",
+          "demand_qty": 1,
+          "done_qty": 0,
+          "location": "WH2/Storage"
+        },
+        {
+          "sku": "RM-0032",
+          "demand_qty": 5,
+          "done_qty": 0,
+          "location": "WH1/Main_Store"
+        }
+      ]
+    },
+    {
+      "ref": "DEL-00009",
+      "customer": "Vertex Distribution",
+      "warehouse": "WH1",
+      "scheduled_in_days": 3,
+      "status": "waiting",
+      "created_by": "staff@coreinventory.com",
+      "notes": "Curated outbound demand from UCI quantity profile.",
+      "lines": [
+        {
+          "sku": "PK-0013",
+          "demand_qty": 1,
+          "done_qty": 0,
+          "location": "WH1/Rack_B"
+        },
+        {
+          "sku": "RM-0001",
+          "demand_qty": 3,
+          "done_qty": 0,
+          "location": "WH1/Main_Store"
+        }
+      ]
+    }
+  ],
+  "transfers": [
+    {
+      "ref": "INT-00001",
+      "from_location": "WH1/Main_Store",
+      "to_location": "WH3/Production",
+      "scheduled_in_days": 1,
+      "status": "waiting",
+      "created_by": "staff@coreinventory.com",
+      "notes": "Internal replenishment between main storage and execution areas.",
+      "lines": [
+        {
+          "sku": "RM-0026",
+          "qty": 4
+        }
+      ]
+    },
+    {
+      "ref": "INT-00002",
+      "from_location": "WH1/Main_Store",
+      "to_location": "WH3/Production",
+      "scheduled_in_days": 2,
+      "status": "ready",
+      "created_by": "manager@coreinventory.com",
+      "notes": "Internal replenishment between main storage and execution areas.",
+      "lines": [
+        {
+          "sku": "RM-0006",
+          "qty": 6
+        }
+      ]
+    },
+    {
+      "ref": "INT-00003",
+      "from_location": "WH1/Main_Store",
+      "to_location": "WH3/Production",
+      "scheduled_in_days": 3,
+      "status": "draft",
+      "created_by": "staff@coreinventory.com",
+      "notes": "Internal replenishment between main storage and execution areas.",
+      "lines": [
+        {
+          "sku": "RM-0007",
+          "qty": 6
+        }
+      ]
+    },
+    {
+      "ref": "INT-00004",
+      "from_location": "WH1/Main_Store",
+      "to_location": "WH3/Production",
+      "scheduled_in_days": 0,
+      "status": "waiting",
+      "created_by": "manager@coreinventory.com",
+      "notes": "Internal replenishment between main storage and execution areas.",
+      "lines": [
+        {
+          "sku": "RM-0028",
+          "qty": 6
+        }
+      ]
+    },
+    {
+      "ref": "INT-00005",
+      "from_location": "WH1/Main_Store",
+      "to_location": "WH3/Production",
+      "scheduled_in_days": 1,
+      "status": "ready",
+      "created_by": "staff@coreinventory.com",
+      "notes": "Internal replenishment between main storage and execution areas.",
+      "lines": [
+        {
+          "sku": "RM-0032",
+          "qty": 2
+        }
+      ]
+    },
+    {
+      "ref": "INT-00006",
+      "from_location": "WH1/Rack_B",
+      "to_location": "WH3/Production",
+      "scheduled_in_days": 2,
+      "status": "draft",
+      "created_by": "manager@coreinventory.com",
+      "notes": "Internal replenishment between main storage and execution areas.",
+      "lines": [
+        {
+          "sku": "PK-0014",
+          "qty": 2
+        }
+      ]
+    },
+    {
+      "ref": "INT-00007",
+      "from_location": "WH1/Rack_B",
+      "to_location": "WH3/Production",
+      "scheduled_in_days": 3,
+      "status": "waiting",
+      "created_by": "staff@coreinventory.com",
+      "notes": "Internal replenishment between main storage and execution areas.",
+      "lines": [
+        {
+          "sku": "PK-0019",
+          "qty": 4
+        }
+      ]
+    },
+    {
+      "ref": "INT-00008",
+      "from_location": "WH1/Rack_B",
+      "to_location": "WH3/Production",
+      "scheduled_in_days": 0,
+      "status": "ready",
+      "created_by": "manager@coreinventory.com",
+      "notes": "Internal replenishment between main storage and execution areas.",
+      "lines": [
+        {
+          "sku": "PK-0002",
+          "qty": 2
+        }
+      ]
+    },
+    {
+      "ref": "INT-00009",
+      "from_location": "WH1/Rack_B",
+      "to_location": "WH3/Production",
+      "scheduled_in_days": 1,
+      "status": "draft",
+      "created_by": "staff@coreinventory.com",
+      "notes": "Internal replenishment between main storage and execution areas.",
+      "lines": [
+        {
+          "sku": "PK-0013",
+          "qty": 3
+        }
+      ]
+    },
+    {
+      "ref": "INT-00010",
+      "from_location": "WH1/Rack_A",
+      "to_location": "WH3/QC_Area",
+      "scheduled_in_days": 2,
+      "status": "waiting",
+      "created_by": "manager@coreinventory.com",
+      "notes": "Internal replenishment between main storage and execution areas.",
+      "lines": [
+        {
+          "sku": "EL-0002",
+          "qty": 30
+        }
+      ]
+    },
+    {
+      "ref": "INT-00011",
+      "from_location": "WH1/Rack_A",
+      "to_location": "WH3/QC_Area",
+      "scheduled_in_days": 3,
+      "status": "ready",
+      "created_by": "staff@coreinventory.com",
+      "notes": "Internal replenishment between main storage and execution areas.",
+      "lines": [
+        {
+          "sku": "EL-0015",
+          "qty": 30
+        }
+      ]
+    },
+    {
+      "ref": "INT-00012",
+      "from_location": "WH1/Rack_A",
+      "to_location": "WH3/QC_Area",
+      "scheduled_in_days": 0,
+      "status": "draft",
+      "created_by": "manager@coreinventory.com",
+      "notes": "Internal replenishment between main storage and execution areas.",
+      "lines": [
+        {
+          "sku": "EL-0017",
+          "qty": 6
+        }
+      ]
+    },
+    {
+      "ref": "INT-00013",
+      "from_location": "WH1/Rack_A",
+      "to_location": "WH3/QC_Area",
+      "scheduled_in_days": 1,
+      "status": "waiting",
+      "created_by": "staff@coreinventory.com",
+      "notes": "Internal replenishment between main storage and execution areas.",
+      "lines": [
+        {
+          "sku": "EL-0027",
+          "qty": 6
+        }
+      ]
+    }
+  ],
+  "adjustments": [
+    {
+      "ref": "ADJ-00001",
+      "location": "WH1/Rack_B",
+      "notes": "Cycle count correction imported from curated demand variance profile.",
+      "scheduled_in_days": 1,
+      "status": "waiting",
+      "created_by": "manager@coreinventory.com",
+      "lines": [
+        {
+          "sku": "PK-0014",
+          "change_qty": -1
+        }
+      ]
+    },
+    {
+      "ref": "ADJ-00002",
+      "location": "WH3/Production",
+      "notes": "Cycle count correction imported from curated demand variance profile.",
+      "scheduled_in_days": 2,
+      "status": "draft",
+      "created_by": "staff@coreinventory.com",
+      "lines": [
+        {
+          "sku": "FG-0001",
+          "change_qty": -1
+        }
+      ]
+    },
+    {
+      "ref": "ADJ-00003",
+      "location": "WH1/Main_Store",
+      "notes": "Cycle count correction imported from curated demand variance profile.",
+      "scheduled_in_days": 0,
+      "status": "waiting",
+      "created_by": "manager@coreinventory.com",
+      "lines": [
+        {
+          "sku": "RM-0026",
+          "change_qty": -1
+        }
+      ]
+    },
+    {
+      "ref": "ADJ-00004",
+      "location": "WH1/Main_Store",
+      "notes": "Cycle count correction imported from curated demand variance profile.",
+      "scheduled_in_days": 1,
+      "status": "draft",
+      "created_by": "staff@coreinventory.com",
+      "lines": [
+        {
+          "sku": "RM-0006",
+          "change_qty": -1
+        }
+      ]
+    },
+    {
+      "ref": "ADJ-00005",
+      "location": "WH1/Rack_A",
+      "notes": "Cycle count correction imported from curated demand variance profile.",
+      "scheduled_in_days": 2,
+      "status": "waiting",
+      "created_by": "manager@coreinventory.com",
+      "lines": [
+        {
+          "sku": "EL-0002",
+          "change_qty": -1
+        }
+      ]
+    },
+    {
+      "ref": "ADJ-00006",
+      "location": "WH1/Main_Store",
+      "notes": "Cycle count correction imported from curated demand variance profile.",
+      "scheduled_in_days": 0,
+      "status": "draft",
+      "created_by": "staff@coreinventory.com",
+      "lines": [
+        {
+          "sku": "RM-0007",
+          "change_qty": -1
+        }
+      ]
+    },
+    {
+      "ref": "ADJ-00007",
+      "location": "WH1/Main_Store",
+      "notes": "Cycle count correction imported from curated demand variance profile.",
+      "scheduled_in_days": 1,
+      "status": "waiting",
+      "created_by": "manager@coreinventory.com",
+      "lines": [
+        {
+          "sku": "RM-0028",
+          "change_qty": -1
+        }
+      ]
+    },
+    {
+      "ref": "ADJ-00008",
+      "location": "WH1/Rack_A",
+      "notes": "Cycle count correction imported from curated demand variance profile.",
+      "scheduled_in_days": 2,
+      "status": "draft",
+      "created_by": "staff@coreinventory.com",
+      "lines": [
+        {
+          "sku": "EL-0015",
+          "change_qty": -1
+        }
+      ]
+    }
+  ]
+}

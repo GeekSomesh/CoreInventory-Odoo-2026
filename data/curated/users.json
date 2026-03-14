@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Alex Manager",
+    "email": "manager@coreinventory.com",
+    "password": "manager123",
+    "role": "manager",
+    "avatar": null
+  },
+  {
+    "name": "Sam Staff",
+    "email": "staff@coreinventory.com",
+    "password": "staff123",
+    "role": "staff",
+    "avatar": null
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-03-14T08:15:52.934027Z",
+  "seed": 20260314,
+  "sources": [
+    {
+      "dataset": "Amazon Reviews 2023 Industrial and Scientific",
+      "source_url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/meta_categories/meta_Industrial_and_Scientific.jsonl.gz",
+      "records_scanned": 362,
+      "sampled_candidates": 220
+    },
+    {
+      "dataset": "Amazon Reviews 2023 Tools and Home Improvement",
+      "source_url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/meta_categories/meta_Tools_and_Home_Improvement.jsonl.gz",
+      "records_scanned": 384,
+      "sampled_candidates": 220
+    },
+    {
+      "dataset": "UCI Online Retail II",
+      "source_url": "https://archive.ics.uci.edu/static/public/502/online%2Bretail%2Bii.zip",
+      "rows_processed": 185375,
+      "quantity_sample_size": 180000,
+      "quantity_quantiles": {
+        "p25": 1,
+        "p50": 3,
+        "p75": 10,
+        "p90": 24
+      }
+    }
+  ]
+}
