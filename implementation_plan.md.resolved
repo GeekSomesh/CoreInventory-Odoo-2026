@@ -1,0 +1,338 @@
+# CoreInventory IMS — Implementation Plan
+
+A modular **Inventory Management System (IMS)** that fully digitizes and centralizes stock operations — replacing manual registers, Excel sheets, and scattered tracking. Built for two user personas: **Inventory Managers** and **Warehouse Staff**.
+
+---
+
+## User Review Required
+
+> [!IMPORTANT]
+> This is a **frontend-only SPA** (Single Page Application) with a simulated backend using **Zustand + LocalStorage**. No real backend/database is included. If you want a real Odoo backend integration or a Node.js/Python API, please confirm so we can adjust the plan.
+
+> [!WARNING]
+> The project will be scaffolded fresh inside `c:\Users\somes\OneDrive\Desktop\CoreInventory-Odoo-2026`. The empty git repo there will be re-used. All existing files (only `README.md`) will be preserved.
+
+---
+
+## Technology Stack
+
+| Layer | Technology | Rationale |
+|---|---|---|
+| Build Tool | **Vite 5** + React 18 + TypeScript | Fastest DX in 2026, HMR, tree-shaking |
+| Routing | **React Router v7** | File-based + nested layouts |
+| State | **Zustand v5** | Lightweight, scalable, with persistence middleware |
+| 3D Engine | **Three.js + React Three Fiber + Drei** | GPU-accelerated 3D scenes & particles |
+| Animations | **Framer Motion v11** | Spring physics, layout animations, exit animations |
+| Charts | **Recharts v2** | Composable, animated charts |
+| Styling | **Vanilla CSS + CSS Variables** | Full control, glassmorphism, dark theme |
+| Icons | **Lucide React** | Clean, consistent icon set |
+| Typography | **Inter + Space Grotesk** (Google Fonts) | Premium modern feel |
+| Notifications | **React Hot Toast** | Elegant toast system |
+| Date | **date-fns** | Lightweight date utilities |
+
+---
+
+## Design Philosophy — 2026 Aesthetic
+
+The UI is built around a **dark glassmorphism design language** with these pillars:
+
+- **3D Hero Elements**: Three.js canvas for login background (floating warehouse particles), dashboard 3D KPI globe
+- **Glassmorphism Cards**: `backdrop-filter: blur()` + translucent borders + inner glow
+- **Micro-animations**: Every interaction has a spring-physics response via Framer Motion
+- **Ambient Gradients**: Deep navy → violet → teal color palette (`#0A0E1A → #1a1040 → #0d2d3d`)
+- **Kinetic Typography**: Animated counters, staggered list entrances
+- **Status Glow**: Badge colors emit `box-shadow` glow matching their semantic color
+- **Hover Depth**: Cards lift with `translateY` + shadow depth on hover
+
+---
+
+## Project Architecture
+
+```
+CoreInventory-Odoo-2026/
+├── src/
+│   ├── main.tsx
+│   ├── App.tsx                    # Router setup
+│   ├── index.css                  # Global design system tokens
+│   ├── types/                     # TypeScript interfaces
+│   │   ├── product.ts
+│   │   ├── operation.ts
+│   │   ├── transfer.ts
+│   │   ├── adjustment.ts
+│   │   ├── warehouse.ts
+│   │   └── user.ts
+│   ├── store/                     # Zustand stores
+│   │   ├── authStore.ts
+│   │   ├── productStore.ts
+│   │   ├── operationStore.ts
+│   │   ├── warehouseStore.ts
+│   │   └── historyStore.ts
+│   ├── data/                      # Mock seed data
+│   │   └── mockData.ts
+│   ├── hooks/                     # Custom hooks
+│   │   ├── useAnimatedCounter.ts
+│   │   └── useDebounce.ts
+│   ├── components/
+│   │   ├── layout/
+│   │   │   ├── AppShell.tsx       # Main layout wrapper
+│   │   │   ├── Sidebar.tsx        # Animated collapsible sidebar
+│   │   │   └── TopBar.tsx         # Search + notification + profile
+│   │   ├── ui/                    # Reusable primitives
+│   │   │   ├── Button.tsx
+│   │   │   ├── GlassCard.tsx
+│   │   │   ├── Badge.tsx
+│   │   │   ├── Modal.tsx
+│   │   │   ├── DataTable.tsx
+│   │   │   ├── FormInput.tsx
+│   │   │   └── StatusPill.tsx
+│   │   ├── three/                 # 3D components
+│   │   │   ├── ParticleField.tsx  # Login background
+│   │   │   └── KpiGlobe.tsx       # Dashboard 3D element
+│   │   └── charts/
+│   │       ├── StockTrendChart.tsx
+│   │       ├── CategoryDonut.tsx
+│   │       └── OperationsBar.tsx
+│   └── pages/
+│       ├── auth/
+│       │   ├── LoginPage.tsx
+│       │   └── ResetPasswordPage.tsx
+│       ├── dashboard/
+│       │   └── DashboardPage.tsx
+│       ├── products/
+│       │   ├── ProductsPage.tsx
+│       │   └── ProductForm.tsx
+│       ├── operations/
+│       │   ├── ReceiptsPage.tsx
+│       │   ├── ReceiptForm.tsx
+│       │   ├── DeliveryPage.tsx
+│       │   ├── DeliveryForm.tsx
+│       │   ├── TransfersPage.tsx
+│       │   ├── TransferForm.tsx
+│       │   ├── AdjustmentsPage.tsx
+│       │   └── AdjustmentForm.tsx
+│       ├── history/
+│       │   └── MoveHistoryPage.tsx
+│       └── settings/
+│           ├── WarehousePage.tsx
+│           └── ProfilePage.tsx
+├── index.html
+├── package.json
+├── vite.config.ts
+└── tsconfig.json
+```
+
+---
+
+## Proposed Changes
+
+### Phase 1 — Project Scaffolding
+
+#### [NEW] Project root — `package.json`, `vite.config.ts`, `tsconfig.json`
+
+- Scaffold via `npm create vite@latest . -- --template react-ts`
+- Install: `@react-three/fiber`, `@react-three/drei`, `three`, `framer-motion`, `zustand`, `react-router-dom`, `recharts`, `lucide-react`, `react-hot-toast`, `date-fns`
+
+---
+
+### Phase 2 — Design System & Layout Shell
+
+#### [NEW] `src/index.css`
+
+Global CSS variables establishing the design system:
+- Color palette: deep space navy + violet + teal gradients
+- Glassmorphism mixins: `--glass-bg`, `--glass-border`, `--glass-blur`
+- Typography scale (Inter for body, Space Grotesk for headings)
+- All animation timing curves
+- Custom scrollbar styles
+
+#### [NEW] `src/components/layout/AppShell.tsx`
+
+Persistent layout wrapper rendered for all authenticated pages:
+- **Sidebar**: Collapsible animated nav with icon + label, active route highlight with sliding indicator, section grouping (Dashboard / Products / Operations / History / Settings)
+- **TopBar**: Global search bar, warehouse switcher dropdown, notification bell with badge, user avatar + dropdown (My Profile / Logout)
+- Page content area with smooth fade transitions via Framer Motion `AnimatePresence`
+
+---
+
+### Phase 3 — Authentication Module
+
+#### [NEW] `src/pages/auth/LoginPage.tsx`
+
+- Full-screen dark canvas with **Three.js ParticleField** (floating boxes/shelves in 3D space)
+- Glassmorphism login card with **3D card flip** on load (Framer Motion `rotateY`)
+- Email + Password form with animated label float
+- "Remember me" toggle
+- Link to forgot password
+
+#### [NEW] `src/pages/auth/ResetPasswordPage.tsx`
+
+- 3-step animated progress: **Email → OTP Verify → New Password**
+- Framer Motion slide transitions between steps
+- OTP digit input boxes with auto-focus leap
+- Success confetti burst on completion
+
+#### [NEW] `src/store/authStore.ts`
+
+- Zustand store with `user`, `isAuthenticated`, `login()`, `logout()`, `resetPassword()`
+- Persisted to localStorage
+
+---
+
+### Phase 4 — Dashboard Module
+
+#### [NEW] `src/pages/dashboard/DashboardPage.tsx`
+
+**KPI Row** (5 cards, each with):
+- Animated number counter (0 → value on mount with spring easing)
+- Glassmorphism card with gradient icon background
+- Trend delta indicator (+/- vs yesterday)
+- KPIs: Total Products, Low Stock Items, Pending Receipts, Pending Deliveries, Internal Transfers
+
+**Charts Row**:
+- `StockTrendChart` — Recharts AreaChart (30-day stock level trend)
+- `CategoryDonut` — Recharts PieChart with animated segments + legend
+- `OperationsBar` — Recharts BarChart (Receipts vs Deliveries per week)
+
+**Dynamic Filter Bar**:
+- Pill-based filter toggles for: Document Type (Receipts / Delivery / Internal / Adjustments), Status (Draft / Waiting / Ready / Done / Cancelled), Warehouse, Category
+- Filters animate in with stagger, active filters glow violet
+
+**Alert Panel** (right column):
+- Low stock items list with product name, current qty, reorder level
+- Color-coded urgency (red = 0 stock, amber = below reorder point)
+- Animated pulse on critical items
+
+---
+
+### Phase 5 — Product Management Module
+
+#### [NEW] `src/pages/products/ProductsPage.tsx`
+
+- Searchable, filterable data table (SKU, Name, Category, UoM, Stock, Reorder Level, Status)
+- Column sorting with animated sort indicator arrows
+- Row hover lift effect
+- Create Product button → opens `ProductForm` in sliding drawer panel
+- Low stock badge glows red/amber
+
+#### [NEW] `src/pages/products/ProductForm.tsx`
+
+Sliding drawer form (right side overlay) with:
+- Name, SKU/Code, Category (dropdown), Unit of Measure, Initial Stock
+- Reordering Rule toggle → Min Qty / Max Qty fields appear with smooth expansion
+- Stock by location breakdown table (read-only, for edit mode)
+- Save / Cancel with spring animation
+
+---
+
+### Phase 6 — Operations Module
+
+#### [NEW] Receipts — `src/pages/operations/ReceiptsPage.tsx` + `ReceiptForm.tsx`
+
+**List Page**:
+- Table: Receipt #, Supplier, Date, Items Count, Status, Actions
+- Status filter pills, date range picker
+- Quick stats bar: total pending count, total items expected
+
+**Form** (Create / View / Validate):
+- Supplier name field, scheduled date
+- Line items table: Product (searchable dropdown) + Expected Qty + Received Qty columns
+- Add/remove lines dynamically (animated row insertion)
+- Validate button → status transitions to Done, stock auto-increments, move logged
+- Status workflow badge: `Draft → Waiting → Ready → Done` with animated step indicator
+
+#### [NEW] Delivery Orders — `src/pages/operations/DeliveryPage.tsx` + `DeliveryForm.tsx`
+
+Same pattern as Receipts but with:
+- Customer name + destination location
+- Pick → Pack → Validate 3-step workflow with animated stepper
+- Validate → stock auto-decrements
+
+#### [NEW] Internal Transfers — `src/pages/operations/TransfersPage.tsx` + `TransferForm.tsx`
+
+- Source Location → Destination Location selector (both within warehouse hierarchy)
+- Line items with product + quantity
+- Validate → moves stock between locations (total unchanged), logs move
+
+#### [NEW] Inventory Adjustments — `src/pages/operations/AdjustmentsPage.tsx` + `AdjustmentForm.tsx`
+
+- Product + Location selector
+- System Quantity (read-only) vs Counted Quantity (editable)
+- Delta auto-calculated and displayed (highlighted red/green)
+- Validate → system qty updated, adjustment logged in history
+
+---
+
+### Phase 7 — Move History (Stock Ledger)
+
+#### [NEW] `src/pages/history/MoveHistoryPage.tsx`
+
+- Full paginated ledger table: Date, Product, From Location, To Location, Qty, Operation Type, Reference, User
+- Advanced filter panel: date range, product search, location, operation type
+- Timeline view toggle: switches from table to animated vertical timeline
+- Export to CSV button
+- Each row expands to show full operation details
+
+---
+
+### Phase 8 — Settings Module
+
+#### [NEW] `src/pages/settings/WarehousePage.tsx`
+
+- List of warehouses with status toggle (active/inactive)
+- Create warehouse → name, short code, address
+- Warehouse detail: nested location tree (visualized as animated accordion)
+- Add locations (e.g., Main Store, Rack A, Production Floor)
+
+#### [NEW] `src/pages/settings/ProfilePage.tsx`
+
+- Avatar upload with preview + circular crop
+- Edit display name, email
+- Change password form with current password verification
+- Active sessions / last login info
+
+---
+
+### Phase 9 — State & Data Layer
+
+#### [NEW] `src/store/productStore.ts`
+- CRUD for products + categories
+- Low stock computed selector
+
+#### [NEW] `src/store/operationStore.ts`
+- Receipts, Deliveries, Transfers, Adjustments arrays
+- `validateReceipt()`, `validateDelivery()`, `validateTransfer()`, `validateAdjustment()` — each mutates product stock and appends to `historyStore`
+
+#### [NEW] `src/store/warehouseStore.ts`
+- Warehouses + nested locations tree
+
+#### [NEW] `src/store/historyStore.ts`
+- Immutable append-only move log
+
+#### [NEW] `src/data/mockData.ts`
+- Seed with 20+ products across 5 categories, 3 warehouses, 50+ historical moves, pending receipts/deliveries
+
+---
+
+## Verification Plan
+
+### Browser Integration Testing (using browser subagent)
+
+1. **Full Inventory Flow**:
+   - Start dev server: `npm run dev` in `c:\Users\somes\OneDrive\Desktop\CoreInventory-Odoo-2026`
+   - Navigate to `http://localhost:5173`
+   - Login with demo credentials
+   - Verify Dashboard KPIs load with animated counters
+   - Create a Receipt → validate → check stock increased on Products page
+   - Create a Delivery → validate → check stock decreased
+   - Create an Internal Transfer → validate → check location updated
+   - Create an Adjustment → validate → check move logged in History
+
+2. **UI/Animation Testing**:
+   - Verify 3D particle field renders on Login page
+   - Verify sidebar collapse/expand animation
+   - Verify KPI counter spring animation on Dashboard
+   - Verify chart renders without errors
+
+### Manual Verification
+- Run `npm run build` and verify zero TypeScript/build errors
+- Check browser console for zero runtime errors after full flow test

@@ -1,0 +1,88 @@
+# CoreInventory IMS — Task Checklist
+
+## Phase 0: Planning & Architecture
+- [x] Analyze problem statement & mockup
+- [/] Write comprehensive implementation plan
+- [ ] Get user approval on plan
+
+## Phase 1: Project Scaffolding
+- [ ] Initialize Vite + React + TypeScript project
+- [ ] Install core dependencies (Three.js, React Three Fiber, Framer Motion, Zustand, React Router, Recharts, etc.)
+- [ ] Set up folder structure (pages, components, store, services, hooks, types)
+- [ ] Configure Tailwind + custom design system tokens
+- [ ] Set up global CSS with 3D perspective, glassmorphism variables
+
+## Phase 2: Design System & Shell
+- [ ] Create global design tokens (colors, typography, spacing, gradients)
+- [ ] Build AppShell (sidebar + topbar) with animated transitions
+- [ ] Build 3D animated background / particle system for login page
+- [ ] Create reusable component library (Button, Card, Badge, Modal, Table, Input, Select, Toast)
+- [ ] Animated sidebar with icon labels, collapse/expand
+
+## Phase 3: Authentication Module
+- [ ] Login page with 3D card flip animation
+- [ ] OTP-based password reset flow (multi-step animated form)
+- [ ] Auth state management (Zustand store)
+- [ ] Protected route HOC
+
+## Phase 4: Dashboard Module
+- [ ] 3D KPI cards (Total Products, Low Stock, Pending Receipts, Pending Deliveries, Transfers)
+- [ ] Animated counters for KPI metrics
+- [ ] Dynamic filter bar (document type, status, warehouse, category)
+- [ ] Recharts: Stock trend line chart, category distribution donut, operations bar chart
+- [ ] Real-time alert panel for low stock items
+- [ ] Recent activity feed
+
+## Phase 5: Product Management Module
+- [ ] Product list view (data table with search, SKU filter, category filter)
+- [ ] Create / Edit product drawer / modal
+- [ ] Stock availability by location breakdown
+- [ ] Product categories management
+- [ ] Reordering rules configuration
+- [ ] Low stock badge indicators
+
+## Phase 6: Operations Module
+### 6a: Receipts (Incoming Stock)
+- [ ] Receipts list with status filters
+- [ ] Create receipt form (supplier, products, quantities)
+- [ ] Validate receipt → auto-increment stock
+- [ ] Status workflow: Draft → Waiting → Ready → Done
+
+### 6b: Delivery Orders (Outgoing Stock)
+- [ ] Delivery list with status filters
+- [ ] Create delivery form (products, quantities, destination)
+- [ ] Pick → Pack → Validate workflow → auto-decrement stock
+- [ ] Status workflow: Draft → Waiting → Ready → Done
+
+### 6c: Internal Transfers
+- [ ] Transfer list
+- [ ] Create transfer (source location → destination location)
+- [ ] Validate → update location without changing total stock
+- [ ] Log to move history
+
+### 6d: Inventory Adjustments
+- [ ] Adjustment list
+- [ ] Select product + location, enter counted qty
+- [ ] System calculates delta, logs adjustment
+- [ ] Status workflow & validation
+
+## Phase 7: Move History (Stock Ledger)
+- [ ] Full ledger view with filters (product, location, date range, operation type)
+- [ ] Animated timeline/log entries
+- [ ] Export CSV functionality
+
+## Phase 8: Settings Module
+- [ ] Warehouse management (create, edit, activate/deactivate)
+- [ ] Location management within warehouses
+- [ ] My Profile page (edit name, avatar, password)
+
+## Phase 9: State Management & Data Layer
+- [ ] Zustand stores for each domain (auth, products, operations, transfers, adjustments, history, settings)
+- [ ] LocalStorage persistence for demo data
+- [ ] Mock data seeding utilities
+
+## Phase 10: Verification & Polish
+- [ ] Cross-module integration test (full inventory flow end-to-end in browser)
+- [ ] Responsive design check (desktop, tablet)
+- [ ] Performance audit (animation frame rate, bundle size)
+- [ ] Create walkthrough.md with screenshots/recordings
