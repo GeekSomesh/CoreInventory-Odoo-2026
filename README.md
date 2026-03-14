@@ -1,45 +1,112 @@
-# CoreInventory IMS
+# CoreInventory
 
-CoreInventory is a modular inventory management system with:
-- Node.js + Express backend (`backend/`)
-- React + TypeScript + Vite frontend (`frontend/`)
-- end-to-end modules for auth, dashboard, products, receipts, deliveries, transfers, adjustments, move history, and warehouse/profile settings
+CoreInventory is a modular Inventory Management System (IMS) built to manage stock operations across warehouses with a single workflow-oriented interface.  
+The project includes full operational modules for products, receipts, deliveries, internal transfers, adjustments, analytics, and automated fulfillment fallback.
 
-The backend now supports two storage modes behind the same API:
-- `lowdb` JSON for lightweight local demo runs
-- `postgres` for relational persistence
+## 1. Solution Scope
 
-Curated seed data lives in `data/curated/` and is used by the backend seed script in either mode.
+CoreInventory is designed for:
+- Inventory managers who need stock visibility and control.
+- Warehouse operators who execute receipts, dispatches, transfers, and adjustments.
 
-## Public Dataset Curation
+Primary objective:
+- Replace manual tracking with a consistent digital process backed by API-driven operations and a central stock ledger.
 
-This repo now includes a curation step that merges public source datasets into the app schema:
-- Amazon Reviews 2023 `Industrial_and_Scientific` metadata
-- Amazon Reviews 2023 `Tools_and_Home_Improvement` metadata
-- UCI `Online Retail II` transaction history
+## 2. Key Capabilities
 
-Run the curator from the repo root:
+- Authentication and profile management.
+- Product and category management with reorder thresholds.
+- Receipt workflow (incoming stock).
+- Delivery workflow (outgoing stock).
+- Internal transfer workflow (location-to-location movement).
+- Stock adjustment workflow (reconciliation with physical count).
+- Move history ledger with filtering and CSV export.
+- Dashboard metrics and operation insights.
+- Alert panel for low stock and near-due operations.
+- Automation module:
+  - Creates delivery.
+  - Uses in-warehouse stock first.
+  - Creates internal transfers if required.
+  - Creates receipts for remaining shortfall.
+  - Validates generated documents and updates stock automatically.
 
-```powershell
-python scripts/curate_public_dataset.py
+## 3. Technology Stack
+
+### Frontend
+- React 19
+- TypeScript
+- Vite
+- Zustand
+- Recharts
+- Framer Motion
+- Axios
+
+### Backend
+- Node.js
+- Express
+- JWT authentication
+- Dual storage engine:
+  - LowDB (JSON file mode)
+  - PostgreSQL
+
+### Data
+- Curated seed data from public sources.
+- Deterministic seeding workflow.
+
+## 4. Architecture
+
+High-level flow:
+1. React frontend calls REST APIs on `http://localhost:3001/api`.
+2. Express routes perform validation and execute domain workflow logic.
+3. Storage adapter persists state in either LowDB or PostgreSQL behind the same in-memory data contract.
+4. Stock changes are recorded in both stock-level records and move-history ledger entries.
+
+Core backend modules:
+- `auth`
+- `products`
+- `warehouses`
+- `receipts`
+- `deliveries`
+- `transfers`
+- `adjustments`
+- `history`
+- `dashboard`
+- `automation`
+
+## 5. Repository Layout
+
+```text
+CoreInventory-Odoo-2026/
+  backend/
+    src/
+      routes/
+      middleware/
+      postgres/
+      scripts/
+  frontend/
+    src/
+      components/
+      pages/
+      store/
+      types/
+  data/
+    curated/
+    raw/
+    coreinventory.json
+  scripts/
+    curate_public_dataset.py
 ```
 
-That refreshes:
-- `data/curated/products.json`
-- `data/curated/operations.json`
-- `data/curated/history.json`
-- `data/curated/source-manifest.json`
+## 6. Setup and Run
 
-Then reseed the backend:
+## 6.1 Prerequisites
 
-```powershell
-cd backend
-npm run seed
-```
+- Node.js 20+
+- npm
+- PostgreSQL (optional but recommended)
+- Python 3.10+ (only for data curation script)
 
-## Backend Setup
-
-1. Install dependencies:
+## 6.2 Backend
 
 ```powershell
 cd backend
@@ -47,37 +114,35 @@ npm install
 Copy-Item .env.example .env
 ```
 
-2. Choose a storage mode in `backend/.env`:
+Configure `backend/.env`:
 
-- JSON demo mode:
-
+LowDB mode:
 ```env
 DB_CLIENT=lowdb
 ```
 
-- PostgreSQL mode:
-
+PostgreSQL mode:
 ```env
 DB_CLIENT=postgres
-DATABASE_URL=postgres://postgres:postgres@localhost:5432/coreinventory
+DATABASE_URL=postgres://postgres:<password>@localhost:5432/coreinventory
+DB_SSL=false
 ```
 
-3. Seed and run:
+Initialize and seed:
 
 ```powershell
+npm run db:init
 npm run seed
 npm run start
 ```
 
-Optional PostgreSQL schema init:
+Backend base URL:
+- `http://localhost:3001`
 
-```powershell
-npm run db:init
-```
+Health endpoint:
+- `GET /api/health`
 
-Backend URL: `http://localhost:3001`
-
-## Frontend Setup
+## 6.3 Frontend
 
 ```powershell
 cd frontend
@@ -85,31 +150,87 @@ npm install
 npm run dev
 ```
 
-Frontend URL: `http://localhost:5173`
+Frontend URL:
+- `http://localhost:5173`
 
-## Demo Credentials
+## 7. Demo Accounts
 
-- `manager@coreinventory.com` / `manager123`
-- `staff@coreinventory.com` / `staff123`
+- Manager: `manager@coreinventory.com` / `manager123`
+- Staff: `staff@coreinventory.com` / `staff123`
 
-## Data Layout
+Seeded manager display name:
+- `Praman`
 
-- `data/curated/`: schema-aligned curated seed data
-- `data/raw/`: drop-zone for larger external datasets before ETL/staging
-- `data/coreinventory.json`: lowdb snapshot when running JSON mode
+## 8. Data Curation Pipeline
 
-## Checks
+The repository includes a curation script that merges public datasets into the app schema.
 
-Frontend:
+Sources currently referenced:
+- Amazon Reviews 2023 (`Industrial_and_Scientific`)
+- Amazon Reviews 2023 (`Tools_and_Home_Improvement`)
+- UCI Online Retail II
+
+Run from repository root:
 
 ```powershell
-npm run lint
-npm run build
+python scripts/curate_public_dataset.py
 ```
 
-Backend:
+Generated curated files:
+- `data/curated/products.json`
+- `data/curated/operations.json`
+- `data/curated/history.json`
+- `data/curated/source-manifest.json`
+
+Then reseed:
 
 ```powershell
 cd backend
 npm run seed
 ```
+
+## 9. Automation Workflow
+
+API endpoint:
+- `POST /api/automation/delivery`
+
+Behavior:
+1. Receives customer demand lines for a target warehouse.
+2. Allocates available quantity from selected warehouse locations.
+3. If short, pulls from other locations through generated transfer documents.
+4. If still short, creates receipt document(s) for remaining quantity.
+5. Creates and validates delivery for full requested quantity.
+6. Persists all generated docs and move-history entries.
+
+The frontend Automation page is available in sidebar:
+- `Operations -> Automation`
+
+## 10. Quality Checks
+
+Frontend:
+
+```powershell
+cd frontend
+npm run lint
+npm run build
+```
+
+Backend syntax check:
+
+```powershell
+node --check backend/src/index.js
+node --check backend/src/routes/automation.js
+```
+
+## 11. Documentation
+
+- Product overview and setup: this file.
+- Implementation details: `docs/IMPLEMENTATION.md`
+- Frontend notes: `frontend/README.md`
+- Backend notes: `backend/README.md`
+
+## 12. Operational Notes
+
+- Do not commit local runtime logs such as `frontend-dev.log` or `backend-dev.log`.
+- Re-seeding overwrites application records with curated seed state.
+- When switching storage mode, restart backend after updating `.env`.
