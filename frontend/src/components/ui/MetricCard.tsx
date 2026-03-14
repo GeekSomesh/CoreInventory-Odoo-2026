@@ -6,11 +6,26 @@ interface MetricCardProps {
   value: number;
   hint?: string;
   accent?: string;
+  onClick?: () => void;
 }
 
-export default function MetricCard({ icon, label, value, hint, accent = 'var(--clr-violet-dim)' }: MetricCardProps) {
+export default function MetricCard({ icon, label, value, hint, accent = 'var(--clr-violet-dim)', onClick }: MetricCardProps) {
+  const interactive = Boolean(onClick);
+
   return (
-    <div className="stat-card" style={{ ['--card-accent' as string]: accent }}>
+    <div
+      className={`stat-card ${interactive ? 'clickable' : ''}`.trim()}
+      style={{ ['--card-accent' as string]: accent }}
+      role={interactive ? 'button' : undefined}
+      tabIndex={interactive ? 0 : undefined}
+      onClick={onClick}
+      onKeyDown={interactive ? (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          onClick?.();
+        }
+      } : undefined}
+    >
       <div
         className="stat-card-icon"
         style={{ background: accent, color: 'var(--txt-primary)' }}
@@ -23,4 +38,3 @@ export default function MetricCard({ icon, label, value, hint, accent = 'var(--c
     </div>
   );
 }
-
