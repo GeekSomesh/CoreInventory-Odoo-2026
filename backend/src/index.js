@@ -13,6 +13,7 @@ import transferRoutes from './routes/transfers.js';
 import adjustmentRoutes from './routes/adjustments.js';
 import historyRoutes from './routes/history.js';
 import dashboardRoutes from './routes/dashboard.js';
+import automationRoutes from './routes/automation.js';
 import { errorHandler } from './middleware/errorHandler.js';
 
 export async function createApp() {
@@ -34,6 +35,7 @@ export async function createApp() {
   app.use('/api/adjustments', adjustmentRoutes);
   app.use('/api/history', historyRoutes);
   app.use('/api/dashboard', dashboardRoutes);
+  app.use('/api/automation', automationRoutes);
   app.use(errorHandler);
 
   return app;

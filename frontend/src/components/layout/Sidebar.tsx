@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
     LayoutDashboard, Package, ArrowDownToLine, ArrowUpFromLine,
     ArrowLeftRight, ClipboardList, History, Warehouse,
-    User, LogOut, ChevronRight, Box, PanelLeftClose, PanelLeftOpen
+    User, LogOut, ChevronRight, Box, PanelLeftClose, PanelLeftOpen, Bot
 } from 'lucide-react';
 import { useAuthStore } from '../../store/authStore';
 
@@ -32,6 +32,7 @@ const navGroups: NavGroup[] = [
         items: [
             { icon: <ArrowDownToLine size={18} />, label: 'Receipts', to: '/receipts' },
             { icon: <ArrowUpFromLine size={18} />, label: 'Deliveries', to: '/deliveries' },
+            { icon: <Bot size={18} />, label: 'Automation', to: '/automation' },
             { icon: <ArrowLeftRight size={18} />, label: 'Transfers', to: '/transfers' },
             { icon: <ClipboardList size={18} />, label: 'Adjustments', to: '/adjustments' },
         ],

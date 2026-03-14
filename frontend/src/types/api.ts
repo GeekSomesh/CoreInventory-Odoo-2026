@@ -210,3 +210,21 @@ export interface DashboardCategorySummary extends Category {
   product_count: number;
   total_stock: number;
 }
+
+export interface AutomationSummary {
+  requested_lines: number;
+  requested_qty: number;
+  transfer_docs: number;
+  transfer_qty: number;
+  receipt_docs: number;
+  receipt_qty: number;
+  delivery_lines: number;
+  delivery_qty: number;
+}
+
+export interface AutomationDeliveryResponse {
+  delivery: Delivery;
+  transfers: Transfer[];
+  receipts: Receipt[];
+  summary: AutomationSummary;
+}

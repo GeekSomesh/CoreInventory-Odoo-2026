@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { Bell, ChevronDown, Loader2, Menu, RefreshCcw } from 'lucide-react';
 import toast from 'react-hot-toast';
 import client from '../../api/client';
-import type { Delivery, OperationStatus, Product, Receipt, Transfer } from '../../types/api';
+import type { Delivery, OperationStatus, Product, Receipt, Transfer, User } from '../../types/api';
 import { formatDate } from '../../utils/format';
 import { getErrorMessage } from '../../utils/errors';
 import { useAuthStore } from '../../store/authStore';
@@ -13,6 +13,7 @@ const routeTitles: Record<string, string> = {
   '/products': 'Products',
   '/receipts': 'Receipts',
   '/deliveries': 'Delivery Orders',
+  '/automation': 'Automation',
   '/transfers': 'Internal Transfers',
   '/adjustments': 'Inventory Adjustments',
   '/history': 'Move History',
@@ -79,7 +80,7 @@ function dueMeta(scheduledDate: string): { include: boolean; urgencyText: string
 export default function TopBar({ onMenuClick }: { onMenuClick: () => void }) {
   const location = useLocation();
   const navigate = useNavigate();
-  const { user, logout } = useAuthStore();
+  const { user, logout, updateUser } = useAuthStore();
   const title = routeTitles[location.pathname] || 'CoreInventory';
 
   const [bellOpen, setBellOpen] = useState(false);
@@ -205,6 +206,28 @@ export default function TopBar({ onMenuClick }: { onMenuClick: () => void }) {
       if (!silent) setLoadingAlerts(false);
     }
   }
+
+  useEffect(() => {
+    let active = true;
+    async function syncProfile() {
+      try {
+        const response = await client.get<User>('/auth/me');
+        if (!active) return;
+        updateUser({
+          name: response.data.name,
+          email: response.data.email,
+          role: response.data.role,
+          avatar: response.data.avatar ?? undefined,
+        });
+      } catch {
+        // Ignore profile sync failures; auth middleware handles invalid tokens globally.
+      }
+    }
+    void syncProfile();
+    return () => {
+      active = false;
+    };
+  }, [updateUser]);
 
   useEffect(() => {
     void loadAlerts(true);

@@ -2,7 +2,7 @@
   "users": [
     {
       "id": "29c531e3-3a5d-4cfa-9925-5b16767f20c5",
-      "name": "Alex Manager",
+      "name": "Praman",
       "email": "manager@coreinventory.com",
       "password_hash": "$2a$10$nWcr6ypqIDYhqjku8YsFWOWH1wGMmNMs3J6G7rGfOecIUxNN9lnxS",
       "role": "manager",

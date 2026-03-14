@@ -15,6 +15,7 @@ import TransfersPage from './pages/operations/TransfersPage';
 import TransferDetail from './pages/operations/TransferDetail';
 import AdjustmentsPage from './pages/operations/AdjustmentsPage';
 import AdjustmentDetail from './pages/operations/AdjustmentDetail';
+import AutomationPage from './pages/operations/AutomationPage';
 import MoveHistoryPage from './pages/history/MoveHistoryPage';
 import WarehousePage from './pages/settings/WarehousePage';
 import ProfilePage from './pages/settings/ProfilePage';
@@ -54,6 +55,7 @@ export default function App() {
           <Route path="transfers/:id" element={<TransferDetail />} />
           <Route path="adjustments" element={<AdjustmentsPage />} />
           <Route path="adjustments/:id" element={<AdjustmentDetail />} />
+          <Route path="automation" element={<AutomationPage />} />
           <Route path="history" element={<MoveHistoryPage />} />
           <Route path="settings/warehouses" element={<WarehousePage />} />
           <Route path="settings/profile" element={<ProfilePage />} />
