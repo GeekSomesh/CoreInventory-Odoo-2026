@@ -13,9 +13,7 @@ import {
   Bar,
   BarChart,
   CartesianGrid,
-  Cell,
-  Pie,
-  PieChart,
+  Legend,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -43,7 +41,25 @@ const typeFilters: Array<{ label: string; value: OperationType | 'all' }> = [
   { label: 'Adjustments', value: 'adjustment' },
 ];
 
-const chartPalette = ['#6366f1', '#06b6d4', '#22c55e', '#f59e0b', '#ef4444'];
+const seriesColor = {
+  received: '#22c55e',
+  delivered: '#6366f1',
+  transferred: '#06b6d4',
+  adjusted: '#f59e0b',
+};
+
+function shortDate(value: string): string {
+  const [year, month, day] = value.split('-');
+  if (!year || !month || !day) return value;
+  return `${month}/${day}`;
+}
+
+function tooltipValueFormatter(value: unknown): string {
+  if (Array.isArray(value)) {
+    return formatQty(Number(value[0] ?? 0));
+  }
+  return formatQty(Number(value ?? 0));
+}
 
 export default function DashboardPage() {
   const [stats, setStats] = useState<DashboardStats | null>(null);
@@ -94,6 +110,14 @@ export default function DashboardPage() {
     }
     return list;
   }, [selectedCategory, stats?.lowStockList]);
+
+  const categoryBars = useMemo(() => {
+    return [...categories]
+      .sort((a, b) => b.total_stock - a.total_stock)
+      .slice(0, 7);
+  }, [categories]);
+
+  const latestTrendPoint = trend.length ? trend[trend.length - 1] : null;
 
   return (
     <div className="page-container">
@@ -204,45 +228,46 @@ export default function DashboardPage() {
           <div className="section-card-header">
             <h3>30 Day Stock Movement</h3>
           </div>
-          <div style={{ height: 280, padding: '10px 16px 6px' }}>
+          <div style={{ padding: '8px 14px 0', color: 'var(--txt-muted)', fontSize: '0.78rem' }}>
+            {latestTrendPoint ? (
+              <span>
+                Latest {latestTrendPoint.date} - Received {formatQty(latestTrendPoint.received)}, Delivered {formatQty(latestTrendPoint.delivered)}, Internal {formatQty(latestTrendPoint.transferred)}, Adjusted {formatQty(latestTrendPoint.adjusted)}
+              </span>
+            ) : (
+              <span>No trend data available</span>
+            )}
+          </div>
+          <div style={{ height: 282, padding: '0 10px 8px' }}>
             <ResponsiveContainer width="100%" height="100%">
               <AreaChart data={trend}>
                 <defs>
-                  <linearGradient id="receivedGrad" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="#22c55e" stopOpacity={0.5} />
-                    <stop offset="95%" stopColor="#22c55e" stopOpacity={0.05} />
+                  <linearGradient id="receivedArea" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="5%" stopColor={seriesColor.received} stopOpacity={0.35} />
+                    <stop offset="95%" stopColor={seriesColor.received} stopOpacity={0.04} />
                   </linearGradient>
-                  <linearGradient id="deliveryGrad" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="#6366f1" stopOpacity={0.5} />
-                    <stop offset="95%" stopColor="#6366f1" stopOpacity={0.05} />
+                  <linearGradient id="deliveredArea" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="5%" stopColor={seriesColor.delivered} stopOpacity={0.3} />
+                    <stop offset="95%" stopColor={seriesColor.delivered} stopOpacity={0.03} />
                   </linearGradient>
                 </defs>
-                <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.07)" />
-                <XAxis dataKey="date" stroke="#64748b" tick={{ fontSize: 11 }} />
+                <CartesianGrid strokeDasharray="3 3" stroke="rgba(148,163,184,0.16)" />
+                <XAxis dataKey="date" tickFormatter={shortDate} stroke="#64748b" tick={{ fontSize: 11 }} />
                 <YAxis stroke="#64748b" tick={{ fontSize: 11 }} />
                 <Tooltip
                   contentStyle={{
-                    background: 'rgba(15, 23, 42, 0.95)',
-                    border: '1px solid rgba(255,255,255,0.1)',
+                    background: 'rgba(9, 15, 33, 0.96)',
+                    border: '1px solid rgba(148,163,184,0.25)',
                     borderRadius: 10,
+                    color: '#e2e8f0',
+                    fontSize: 12,
                   }}
+                  formatter={tooltipValueFormatter}
                 />
-                <Area
-                  type="monotone"
-                  dataKey="received"
-                  stroke="#22c55e"
-                  strokeWidth={2}
-                  fillOpacity={1}
-                  fill="url(#receivedGrad)"
-                />
-                <Area
-                  type="monotone"
-                  dataKey="delivered"
-                  stroke="#6366f1"
-                  strokeWidth={2}
-                  fillOpacity={1}
-                  fill="url(#deliveryGrad)"
-                />
+                <Legend wrapperStyle={{ fontSize: 12 }} />
+                <Area type="monotone" dataKey="received" stroke={seriesColor.received} fill="url(#receivedArea)" strokeWidth={2} />
+                <Area type="monotone" dataKey="delivered" stroke={seriesColor.delivered} fill="url(#deliveredArea)" strokeWidth={2} />
+                <Area type="monotone" dataKey="transferred" stroke={seriesColor.transferred} fillOpacity={0} strokeWidth={2} />
+                <Area type="monotone" dataKey="adjusted" stroke={seriesColor.adjusted} fillOpacity={0} strokeWidth={2} />
               </AreaChart>
             </ResponsiveContainer>
           </div>
@@ -252,31 +277,28 @@ export default function DashboardPage() {
           <div className="section-card-header">
             <h3>Category Distribution</h3>
           </div>
-          <div style={{ height: 280, padding: '10px 8px' }}>
+          <div style={{ padding: '8px 14px 0', color: 'var(--txt-muted)', fontSize: '0.78rem' }}>
+            Top categories by current stock volume
+          </div>
+          <div style={{ height: 282, padding: '0 10px 8px' }}>
             <ResponsiveContainer width="100%" height="100%">
-              <PieChart>
-                <Pie
-                  data={categories}
-                  dataKey="total_stock"
-                  nameKey="name"
-                  cx="50%"
-                  cy="50%"
-                  outerRadius={90}
-                  innerRadius={52}
-                  paddingAngle={2}
-                >
-                  {categories.map((entry, index) => (
-                    <Cell key={entry.id} fill={chartPalette[index % chartPalette.length]} />
-                  ))}
-                </Pie>
+              <BarChart data={categoryBars} layout="vertical" margin={{ left: 10, right: 16 }}>
+                <CartesianGrid strokeDasharray="3 3" stroke="rgba(148,163,184,0.12)" />
+                <XAxis type="number" stroke="#64748b" tick={{ fontSize: 11 }} />
+                <YAxis type="category" dataKey="name" stroke="#64748b" tick={{ fontSize: 11 }} width={110} />
                 <Tooltip
                   contentStyle={{
-                    background: 'rgba(15, 23, 42, 0.95)',
-                    border: '1px solid rgba(255,255,255,0.1)',
+                    background: 'rgba(9, 15, 33, 0.96)',
+                    border: '1px solid rgba(148,163,184,0.25)',
                     borderRadius: 10,
+                    color: '#e2e8f0',
+                    fontSize: 12,
                   }}
+                  formatter={tooltipValueFormatter}
                 />
-              </PieChart>
+                <Bar dataKey="total_stock" fill="#6366f1" radius={[0, 8, 8, 0]} name="Total Stock" />
+                <Bar dataKey="product_count" fill="#06b6d4" radius={[0, 8, 8, 0]} name="Product Count" />
+              </BarChart>
             </ResponsiveContainer>
           </div>
         </section>
@@ -286,22 +308,30 @@ export default function DashboardPage() {
         <div className="section-card-header">
           <h3>Operations Comparison</h3>
         </div>
-        <div style={{ height: 240, padding: '10px 16px 6px' }}>
+        <div style={{ padding: '8px 14px 0', color: 'var(--txt-muted)', fontSize: '0.78rem' }}>
+          Last 12 timeline points grouped by operation type
+        </div>
+        <div style={{ height: 262, padding: '0 10px 8px' }}>
           <ResponsiveContainer width="100%" height="100%">
-            <BarChart data={trend.slice(-12)}>
-              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.07)" />
-              <XAxis dataKey="date" stroke="#64748b" tick={{ fontSize: 11 }} />
+            <BarChart data={trend.slice(-12)} barGap={6}>
+              <CartesianGrid strokeDasharray="3 3" stroke="rgba(148,163,184,0.14)" />
+              <XAxis dataKey="date" tickFormatter={shortDate} stroke="#64748b" tick={{ fontSize: 11 }} />
               <YAxis stroke="#64748b" tick={{ fontSize: 11 }} />
               <Tooltip
                 contentStyle={{
-                  background: 'rgba(15, 23, 42, 0.95)',
-                  border: '1px solid rgba(255,255,255,0.1)',
+                  background: 'rgba(9, 15, 33, 0.96)',
+                  border: '1px solid rgba(148,163,184,0.25)',
                   borderRadius: 10,
+                  color: '#e2e8f0',
+                  fontSize: 12,
                 }}
+                formatter={tooltipValueFormatter}
               />
-              <Bar dataKey="received" fill="#22c55e" radius={[4, 4, 0, 0]} />
-              <Bar dataKey="delivered" fill="#6366f1" radius={[4, 4, 0, 0]} />
-              <Bar dataKey="transferred" fill="#06b6d4" radius={[4, 4, 0, 0]} />
+              <Legend wrapperStyle={{ fontSize: 12 }} />
+              <Bar dataKey="received" fill={seriesColor.received} radius={[4, 4, 0, 0]} />
+              <Bar dataKey="delivered" fill={seriesColor.delivered} radius={[4, 4, 0, 0]} />
+              <Bar dataKey="transferred" fill={seriesColor.transferred} radius={[4, 4, 0, 0]} />
+              <Bar dataKey="adjusted" fill={seriesColor.adjusted} radius={[4, 4, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
         </div>
