@@ -1,5 +1,7 @@
 # CoreInventory
 
+![CoreInventory Preview](./image.png)
+
 CoreInventory is a modular Inventory Management System (IMS) built to manage stock operations across warehouses with a single workflow-oriented interface.  
 The project includes full operational modules for products, receipts, deliveries, internal transfers, adjustments, analytics, and automated fulfillment fallback.
 

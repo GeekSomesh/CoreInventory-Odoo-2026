@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
     LayoutDashboard, Package, ArrowDownToLine, ArrowUpFromLine,
     ArrowLeftRight, ClipboardList, History, Warehouse,
-    User, LogOut, ChevronRight, Box, PanelLeftClose, PanelLeftOpen, Bot
+    User, LogOut, ChevronRight, PanelLeftClose, PanelLeftOpen, Bot
 } from 'lucide-react';
 import { useAuthStore } from '../../store/authStore';
 
@@ -17,6 +17,38 @@ interface NavItem {
 interface NavGroup {
     title: string;
     items: NavItem[];
+}
+
+function BrandMark() {
+    return (
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+                d="M12 2.75L19.5 7V17L12 21.25L4.5 17V7L12 2.75Z"
+                stroke="currentColor"
+                strokeWidth="1.6"
+                strokeLinejoin="round"
+            />
+            <path
+                d="M4.5 7L12 11.25L19.5 7"
+                stroke="currentColor"
+                strokeWidth="1.6"
+                strokeLinejoin="round"
+            />
+            <path
+                d="M12 11.25V21.25"
+                stroke="currentColor"
+                strokeWidth="1.6"
+                strokeLinecap="round"
+            />
+            <path
+                d="M8.1 4.6L15.9 9.1"
+                stroke="currentColor"
+                strokeWidth="1.3"
+                strokeLinecap="round"
+                opacity="0.6"
+            />
+        </svg>
+    );
 }
 
 const navGroups: NavGroup[] = [
@@ -82,8 +114,9 @@ export default function Sidebar({ open, onToggle }: { open: boolean; onToggle: (
                     background: 'var(--grad-violet)',
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
                     boxShadow: 'var(--shadow-glow-violet)',
+                    color: 'white',
                 }}>
-                    <Box size={20} color="white" />
+                    <BrandMark />
                 </div>
                 <AnimatePresence>
                     {open && (
@@ -94,7 +127,6 @@ export default function Sidebar({ open, onToggle }: { open: boolean; onToggle: (
                             <div style={{ fontFamily: 'Space Grotesk', fontWeight: 700, fontSize: '1.1rem', color: 'var(--txt-primary)', lineHeight: 1.1 }}>
                                 Core<span style={{ color: 'var(--clr-violet)' }}>Inventory</span>
                             </div>
-                            <div style={{ fontSize: '0.65rem', color: 'var(--txt-muted)', letterSpacing: '0.1em' }}>ODOO 2026</div>
                         </motion.div>
                     )}
                 </AnimatePresence>
